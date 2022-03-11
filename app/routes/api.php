@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/start', function () {
+Route::get('/copyright', function () {
     return CopyrightController::showCopyright();
 })->name('start');

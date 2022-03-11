@@ -66,11 +66,19 @@ Als Backend verwenden wir eine [PHP-Anwendung](https://www.php.net/manual/en/) a
 
 Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt.
 
+**Bitte probiere die API-Methode zur Anzeige des Copyrights in Swagger aus:**
+- [ ] Klicke in Swagger dazu auf `/copyright`.
+- [ ] Klicke auf den Button `Try it out`.
+- [ ] Sende die Anfrage indem Du auf `Execute` drückst.
+- Du siehst im Abschnitt `Response body` die Antwort mit dem aktuellen Copyright.
+
+**Verändere das Copyright:**  
 - [ ] Öffne die Datei [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
 - [ ] In Zeile 18 wird das Copyright als String gespeichert.
 - [ ] Benutze den verlinkten ASCII Generator um dein Copyright zu erstellen.
 - [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch dein eigenes Copyright.
-- [ ] Du musst deine Änderung nun noch speichern.
+- [ ] Probier Dein neues Copyright mit Swagger aus!
+- [ ] Du musst deine Änderung nun noch speichern - **committen** genannt.
   - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücken die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
   - Gib oben eine Textnachricht ein, die deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
   - Speichere die Nachricht mit <kbd>⏎</kbd>
