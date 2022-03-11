@@ -82,11 +82,12 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️
 - [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch Dein eigenes Copyright.
 - [ ] Probier Dein neues Copyright mit Swagger aus!
 - [ ] Du musst Deine Änderung nun noch speichern - **committen** genannt.
+#### ✅ Commit erstellen:
   - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücke die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
   - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
   - Speichere die Nachricht mit <kbd>Strg</kbd><kbd>⏎</kbd>
   - Klicke nun im Dialog auf `Yes`, um alle Deine Änderungen zum Commit hinzuzufügen.
-  - Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen. Hier must du ebenfalls mit `OK` bestätigen.
+  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must du ebenfalls mit `OK` bestätigen.
   - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
 
 ## 3.) Methode /play schreiben
@@ -103,7 +104,52 @@ Anbei das Struktogramm für einen Spielzug von Dir.
 - [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile xyz fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
+- [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `/board`**
+- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 
 ## 4.) Der 🤖 spielt - /play-bot
 Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
 Öffne dazu Swagger und verwende im Wechsel (Du beginnst) die `/play`-API-Route und die `/play-bot`-API-Route.
+
+## 5.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr nicht an der Reihe seit.  
+So macht das natürlich keinen Spaß 😞! 
+
+**To-do:**
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `isAllowedToPlay()` - Zeile xyz fehlt noch die Logik.
+  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
+- [ ] Teste deine Änderung in Swagger ausführlich
+- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+
+## 6.) Wer hat gewonnen? 🏆
+Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
+Es ist an dir das zu ändern.
+
+**To-do:**
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile xyz fehlt noch die Logik.
+  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
+- [ ] Teste deine Änderung in Swagger ausführlich
+- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+
+## Zusatzaufgaben
+Dir hat das alles großen Spaß gemacht und du willst noch mehr, kein Problem 😈!
+
+### 7.) Methode someoneHasWon() verschönern ✨
+Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
+Kannst du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
+Dazu kann es hilfreich sein, wenn Du dir die Methoden des `$game` anzeigen lässt, dazu tippst du einfach `$game->` und wartest etwas.
+
+**To-do:**
+- [ ] Verschönere die Methode `someoneHasWon()`
+- [ ] Teste deine Änderung in Swagger ausführlich
+- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+
+### 8.) 4x4 Tic-Tac-Toe 😈
+Überlege Dir, was du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
+Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php) genauer an.
+
+**To-do:**
+- [ ] Versuche ein 4x4 Tic-Tac-Toe lauffähig zu bekommen
+  - Insbesondere Zusatzaufgabe 7.) wird dazu notwendig sein.
+- [ ] Teste deine Änderung in Swagger ausführlich
+- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
