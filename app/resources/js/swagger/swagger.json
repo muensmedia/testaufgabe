@@ -99,6 +99,18 @@
             }
         },
         "/board": {
+            "get": {
+                "tags": ["tic-tac-toe"],
+                "summary": "Zeigt das aktuelle Spielbrett an.",
+                "responses": {
+                    "200": {
+                        "description": "Aktuelles Spielbrett",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    }
+                }
+            },
             "delete": {
                 "tags": ["tic-tac-toe"],
                 "summary": "Löscht das aktuelle Spielbrett und beginnt ein neues Spiel.",

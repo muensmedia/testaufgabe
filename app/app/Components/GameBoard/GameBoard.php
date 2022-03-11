@@ -38,8 +38,8 @@ class GameBoard
      */
     private function validatePosition(int $x, int $y): void
     {
-        if ($x < 0 || $x >= self::TTT_SIZE) throw new Exception("Invalid X position.");
-        if ($y < 0 || $y >= self::TTT_SIZE) throw new Exception("Invalid Y position.");
+        if ($x < 0 || $x >= self::TTT_SIZE) throw new Exception("Invalid X position: $x");
+        if ($y < 0 || $y >= self::TTT_SIZE) throw new Exception("Invalid Y position: $y");
     }
 
     /**

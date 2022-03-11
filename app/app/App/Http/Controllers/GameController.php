@@ -38,14 +38,61 @@ class GameController extends Controller
         // This function needs to return false if nobody has won yet, and true f someone has
         // =============================================================================================================
 
+        if (
+            $game->getRow(0)->getSpace( 0 ) === $game->getRow(0)->getSpace( 1 ) &&
+            $game->getRow(0)->getSpace( 0 ) === $game->getRow(0)->getSpace( 2 ) &&
+            $game->getRow(0)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getRow(1)->getSpace( 0 ) === $game->getRow(1)->getSpace( 1 ) &&
+            $game->getRow(1)->getSpace( 0 ) === $game->getRow(1)->getSpace( 2 ) &&
+            $game->getRow(1)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getRow(2)->getSpace( 0 ) === $game->getRow(2)->getSpace( 1 ) &&
+            $game->getRow(2)->getSpace( 0 ) === $game->getRow(2)->getSpace( 2 ) &&
+            $game->getRow(2)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getColumn(0)->getSpace( 0 ) === $game->getColumn(0)->getSpace( 1 ) &&
+            $game->getColumn(0)->getSpace( 0 ) === $game->getColumn(0)->getSpace( 2 ) &&
+            $game->getColumn(0)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getColumn(1)->getSpace( 0 ) === $game->getColumn(1)->getSpace( 1 ) &&
+            $game->getColumn(1)->getSpace( 0 ) === $game->getColumn(1)->getSpace( 2 ) &&
+            $game->getColumn(1)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getColumn(2)->getSpace( 0 ) === $game->getColumn(2)->getSpace( 1 ) &&
+            $game->getColumn(2)->getSpace( 0 ) === $game->getColumn(2)->getSpace( 2 ) &&
+            $game->getColumn(2)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getMainDiagonal(0)->getSpace( 0 ) === $game->getMainDiagonal(0)->getSpace( 1 ) &&
+            $game->getMainDiagonal(0)->getSpace( 0 ) === $game->getMainDiagonal(0)->getSpace( 2 ) &&
+            $game->getMainDiagonal(0)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
+        if (
+            $game->getAntiDiagonal(0)->getSpace( 0 ) === $game->getAntiDiagonal(0)->getSpace( 1 ) &&
+            $game->getAntiDiagonal(0)->getSpace( 0 ) === $game->getAntiDiagonal(0)->getSpace( 2 ) &&
+            $game->getAntiDiagonal(0)->getSpace( 0 ) !== GameMark::None
+        ) return true;
+
         return false;
     }
 
     protected function whoHasWon( GameBoard $game ): ?GamePlayer {
-        // ##### TASK 4.2 - Check who has won ##########################################################################
+        // ##### TASK 4 - Check who has won ############################################################################
         // =============================================================================================================
-        // Here, you need to code a way to find out who has won the game. You should already have completed task 4.1 at
-        // this point.
+        // Here, you need to code a way to find out who has won the game.
         // This function needs to return null of nobody has won yet - you can use someoneHasWon( $game ) for this.
         // If someone has won, it needs to return either GamePlayer::Human or GamePlayer::Robot.
         // =============================================================================================================
@@ -87,17 +134,21 @@ class GameController extends Controller
         if ($x < 0 || $x > 2 || $y < 0 || $y > 2)
             return response("Position outside of the game board")->setStatusCode(422)->header('Content-Type', 'text/plain');
 
+        // Prevent the player from playing if the game has already ended
+        if ($this->someoneHasWon( $game ) || !$game->spaceIsLeft())
+            return response("You are not allowed to play. The game has already ended.")->setStatusCode(403)->header('Content-Type', 'text/plain');
+
+        // Prevent the player from playing if it is not his turn
+        if (!$this->isAllowedToPlay($game, GamePlayer::Human))
+            return response("You are not allowed to play. It is the bots turn!")->setStatusCode(403)->header('Content-Type', 'text/plain');
+
         // ##### TASK 3 - Let the player make their move ###############################################################
         // =============================================================================================================
         // Here, you need to code the logic that allows a player to make a move.
         // You can make use of the methods offered by the $game object.
         // =============================================================================================================
 
-        // Prevent the player from playing if it is not his turn
-        if (!$this->isAllowedToPlay($game, GamePlayer::Human))
-            return response("You are not allowed to play. It is the bots turn!")->setStatusCode(403)->header('Content-Type', 'text/plain');
-
-        // The player is allowed to play. Now, you will need to check if the space the player has selected is still open.
+        // We've previously ensured that the player is allowed to play and the game has not ended yet.
         // The method $game->getSpace( $x, $y ) will return the content of a space - either GameMark::None (free),
         // GameMark::Cross (belongs to the bot) or GameMark::Circle (belongs to the player).
         // Once all the checks have passed, you can finally update the game board by calling
@@ -126,21 +177,20 @@ class GameController extends Controller
     public function playBot(): Response
     {
         // Load the current game board
-        $gameBoard = GameBoard::load();
+        $game = GameBoard::load();
 
-        // prevent infinite loop - is there still a free space on the game board?
-        if (!$gameBoard->spaceIsLeft())
-            return response("Bot is not allowed to play, game board has no space left.")->setStatusCode(403)->header('Content-Type', 'text/plain');
+        // Prevent the bot from playing if the game has already ended
+        if ($this->someoneHasWon( $game ) || !$game->spaceIsLeft())
+            return response("Bot is not allowed to play. The game has already ended.")->setStatusCode(403)->header('Content-Type', 'text/plain');
 
         // is the bot really allowed to play?
-        if (!$this->isAllowedToPlay($gameBoard, GamePlayer::Robot))
+        if (!$this->isAllowedToPlay($game, GamePlayer::Robot))
             return response("Bot is not allowed to play. It is your turn!")->setStatusCode(403)->header('Content-Type', 'text/plain');
-
 
         $freeSpaces = [];
 
         // get all rows of our game board
-        foreach ($gameBoard->getRows() as $y => $row) {
+        foreach ($game->getRows() as $y => $row) {
             // get all spaces inside of the row
             foreach ($row->getSpaces() as $x => $space) {
                 // check whether the space is still free
@@ -155,25 +205,35 @@ class GameController extends Controller
         $randomFreeSpaceXY = Arr::random($freeSpaces);
 
         // mark field with a circle
-        $gameBoard->setSpace($randomFreeSpaceXY['x'], $randomFreeSpaceXY['y'], GameMark::Circle);
+        $game->setSpace($randomFreeSpaceXY['x'], $randomFreeSpaceXY['y'], GameMark::Circle);
 
         // save changed game board
-        $gameBoard->save();
+        $game->save();
 
-        return $this->status_output($gameBoard);
+        return $this->status_output($game);
     }
 
     /**
-     * Rests the board
+     * Displays the board
+     * @return Response
+     */
+    public function display(): Response
+    {
+        // Load the current game  and displays it
+        return $this->status_output( GameBoard::load() );
+    }
+
+    /**
+     * Resets the board
      * @return Response
      */
     public function reset(): Response
     {
         // Load the current game board
-        $gameBoard = GameBoard::load();
-        $gameBoard->clear();
-        $gameBoard->save();
+        $game = GameBoard::load();
+        $game->clear();
+        $game->save();
 
-        return $this->status_output( $gameBoard );
+        return $this->status_output( $game );
     }
 }
