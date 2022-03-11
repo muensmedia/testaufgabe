@@ -38,8 +38,8 @@ class GameBoard
      */
     private function validatePosition(int $x, int $y): void
     {
-        if ($x < 0 || $x >= self::TTT_SIZE) throw new Exception("Invalid X position.");
-        if ($y < 0 || $y >= self::TTT_SIZE) throw new Exception("Invalid Y position.");
+        if ($x < 0 || $x >= self::TTT_SIZE) throw new Exception("Invalid X position: $x");
+        if ($y < 0 || $y >= self::TTT_SIZE) throw new Exception("Invalid Y position: $y");
     }
 
     /**
@@ -236,8 +236,12 @@ class GameBoard
                     $gameBoardString .= '|';
                 }
 
-                // draw the game mark
-                $gameBoardString .= $space->char();
+                // if the row is the last row and the game mark is "none", draw spaces instead of underscores
+                if (($rowNumber === self::TTT_SIZE - 1) && ($space === GameMark::None)) {
+                    $gameBoardString .= '  ';
+                } else {
+                    $gameBoardString .= $space->char();
+                }
             }
 
             // close the row

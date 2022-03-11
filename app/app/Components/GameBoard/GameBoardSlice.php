@@ -45,7 +45,7 @@ class GameBoardSlice
             GameBoardSliceType::Row => $this->board->getSpace( $p, $this->other ),
             GameBoardSliceType::Column => $this->board->getSpace( $this->other, $p ),
             GameBoardSliceType::MainDiagonal => $this->board->getSpace( $p, $p ),
-            GameBoardSliceType::AntiDiagonal => $this->board->getSpace( $p, $p - ($this->size - 1 ) ),
+            GameBoardSliceType::AntiDiagonal => $this->board->getSpace( $p, ($this->size - 1 ) - $p ),
         };
     }
 
