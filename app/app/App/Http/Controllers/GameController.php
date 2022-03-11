@@ -142,4 +142,18 @@ class GameController extends Controller
             abort(403, 'Bot is not allowed to play, game board has no space left.');
         }
     }
+
+    /**
+     * Rests the board
+     * @return Response
+     */
+    public function reset(): Response
+    {
+        // Load the current game board
+        $gameBoard = GameBoard::load();
+        $gameBoard->clear();
+        $gameBoard->save();
+
+        return $this->status_output( $gameBoard );
+    }
 }

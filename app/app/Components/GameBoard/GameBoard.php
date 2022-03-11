@@ -25,8 +25,8 @@ class GameBoard
 
     private function __construct()
     {
-        // Create an empty 3x3 board
-        $this->board = array_fill(0, self::TTT_SIZE * self::TTT_SIZE, GameMark::None);
+        // Start with an empty board
+        $this->clear();
     }
 
     /**
@@ -178,6 +178,16 @@ class GameBoard
     public function getLastPlayer(): ?GamePlayer
     {
         return $this->last_player;
+    }
+
+    /**
+     * Clears the GameBoard
+     * @return void
+     */
+    function clear(): void
+    {
+        // Create a square empty board based on TTT_SIZE
+        $this->board = array_fill(0, self::TTT_SIZE * self::TTT_SIZE, GameMark::None);
     }
 
     /**
