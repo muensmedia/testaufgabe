@@ -20,3 +20,6 @@ Route::get('/copyright', function () {
 
 Route::patch('/play/{x}/{y}', [\App\Http\Controllers\GameController::class, 'play'])
     ->name('play-api')->where('x', '[0-9]+')->where('y', '[0-9]+');
+
+Route::patch('/play-bot', [\App\Http\Controllers\GameController::class, 'playBot'])
+    ->name('play-bot');

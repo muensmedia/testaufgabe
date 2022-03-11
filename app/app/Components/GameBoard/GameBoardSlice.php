@@ -64,4 +64,19 @@ class GameBoardSlice
             GameBoardSliceType::AntiDiagonal => $this->board->setSpace( $p, $p - ($this->size - 1 ), $mark ),
         };
     }
+
+    /**
+     * Get all spaces inside an array, belonging to one row.
+     * @return GameMark[]
+     * @throws Exception
+     */
+    public function getSpaces(): array
+    {
+        $array = [];
+
+        for ($i = 0; $i < $this->size; $i++) {
+            $array[] = $this->getSpace($i);
+        }
+        return $array;
+    }
 }

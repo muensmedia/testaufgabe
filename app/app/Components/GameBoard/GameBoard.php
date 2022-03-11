@@ -80,12 +80,42 @@ class GameBoard
     }
 
     /**
+     * Return all rows
+     * @return GameBoardSlice[]
+     * @throws Exception
+     */
+    public function getRows(): array
+    {
+        $array = [];
+
+        for ($i = 0; $i < self::TTT_SIZE; $i++) {
+            $array[] = $this->getRow($i);
+        }
+        return $array;
+    }
+
+    /**
      * Returns an entire column
      * @throws Exception
      */
     public function getColumn(int $col ): GameBoardSlice
     {
         return new GameBoardSlice( $this, GameBoardSliceType::Column, self::TTT_SIZE, $col );
+    }
+
+    /**
+     * Return all rows
+     * @return GameBoardSlice[]
+     * @throws Exception
+     */
+    public function getColumns(): array
+    {
+        $array = [];
+
+        for ($i = 0; $i < self::TTT_SIZE; $i++) {
+            $array[] = $this->getColumn($i);
+        }
+        return $array;
     }
 
     /**
@@ -157,5 +187,25 @@ class GameBoard
     function save(): void
     {
         Storage::disk('local')->put(self::TTT_GAME, serialize( $this ) );
+    }
+
+    /**
+     * Is there still some space left on the game board?
+     * @return bool
+     * @throws Exception
+     */
+    public function spaceIsLeft() {
+        // get all rows of our game board
+        foreach ($this->getRows() as $row) {
+            // get all spaces inside of the row
+            foreach($row->getSpaces() as $space) {
+                // check whether the space is still free
+                if ($space->free()) {
+                    // we have at least one free space, stop and return true
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

@@ -77,6 +77,26 @@
                     }
                 }
             }
+        },
+        "/play-bot": {
+            "patch": {
+                "tags": ["tic-tac-toe"],
+                "summary": "Führt einen Spielzug für den Bot aus",
+                "responses": {
+                    "200": {
+                        "description": "Spielzug für den Bot erfolgreich ausgeführt, neue Spielsituation wird angezeigt.",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    },
+                    "403": {
+                        "description": "Spielzug unmöglich. Alle Felder des Spielfelds sind bereits belegt.",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

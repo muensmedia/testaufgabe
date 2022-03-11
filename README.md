@@ -102,3 +102,7 @@ Anbei das Struktogramm für einen Spielzug von Dir.
 - [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile xyz fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
+
+## 4.) Der 🤖 spielt - /play-bot
+Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
+Öffne dazu Swagger und verwende im Wechsel (Du beginnst) die `/play`-API-Route und die `/play-bot`-API-Route.
