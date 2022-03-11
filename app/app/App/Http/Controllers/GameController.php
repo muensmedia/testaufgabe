@@ -5,12 +5,18 @@ namespace App\Http\Controllers;
 use Components\Enums\GameMark;
 use Components\Enums\GamePlayer;
 use Components\GameBoard\GameBoard;
+use Exception;
 use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
 
 class GameController extends Controller
 {
 
+    /**
+     * @param GameBoard $game
+     * @return Response
+     * @throws Exception
+     */
     protected function status_output( GameBoard $game ): Response {
 
         // Generate a status text for the end of the game.
@@ -25,9 +31,14 @@ class GameController extends Controller
             $final = "\nIt's a draw!";
         else $final = '';
 
-        return response("{$game->draw()}{$final}")->header('Content-Type', 'text/plain');
+        return response(CopyrightController::getCopyright() . "\n\n{$game->draw()}{$final}")->header('Content-Type', 'text/plain');
     }
 
+    /**
+     * @param GameBoard $game
+     * @return bool
+     * @throws Exception
+     */
     protected function someoneHasWon( GameBoard $game ): bool {
         // ##### TASK 7 - Make this check more efficient ###############################################################
         // =============================================================================================================
@@ -91,7 +102,7 @@ class GameController extends Controller
     }
 
     protected function whoHasWon( GameBoard $game ): ?GamePlayer {
-        // ##### TASK 4 - Check who has won ############################################################################
+        // ##### TASK 6 - Check who has won ############################################################################
         // =============================================================================================================
         // Here, you need to code a way to find out who has won the game.
         // This function needs to return null of nobody has won yet - you can use someoneHasWon( $game ) for this.
@@ -109,9 +120,13 @@ class GameController extends Controller
      */
     protected function isAllowedToPlay( GameBoard $game, GamePlayer $player) : bool {
 
+        // ##### TASK 5 - No cheating! #################################################################################
+        // =============================================================================================================
         // We don't want the player to be able to cheat. They should only be able to make a move if it is their turn.
         // Neither the player nor the bot are allowed to make a move twice in a row. So, you need to check which player
         // made the *last* move to find out if the player is allowed to act.
+        // =============================================================================================================
+
         // The method $game->getLastPlayer() will return either GamePlayer::Robot (the last move was made by the bot),
         // GamePlayer::Human (the last move was made by the player) or GamePlayer::None (this is the first move).
         // Inside of $player you have the player which wants to play now.
@@ -124,9 +139,10 @@ class GameController extends Controller
      * @param int $x The x position entered by the player
      * @param int $y The y position entered by the player
      * @return Response
+     * @throws Exception
      */
-    public function play(int $x, int $y) {
-
+    public function play(int $x, int $y): Response
+    {
         // Loading the game board
         $game = GameBoard::load();
 
@@ -173,12 +189,19 @@ class GameController extends Controller
     /**
      * The MÜNSMEDIA GmbH bot plays one turn
      * @return Response
-     * @throws \Exception
+     * @throws Exception
      */
     public function playBot(): Response
     {
         // Load the current game board
         $game = GameBoard::load();
+
+        // ##### TASK 4 - Understand the bot ###########################################################################
+        // =============================================================================================================
+        // This first step to beat your enemy is to thoroughly understand them.
+        // Luckily, as a developer, you can literally look into its head. So, check out the bot logic and try to
+        // understand what it does.
+        // =============================================================================================================
 
         // Prevent the bot from playing if the game has already ended
         if ($this->someoneHasWon( $game ) || !$game->spaceIsLeft())

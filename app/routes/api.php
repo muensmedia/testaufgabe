@@ -19,13 +19,14 @@ Route::get('/copyright', function () {
 })->name('start');
 
 Route::patch('/play/{x}/{y}', [\App\Http\Controllers\GameController::class, 'play'])
-    ->name('play-api')->where('x', '[0-9]+')->where('y', '[0-9]+');
+->name('play-api')->where('x', '[0-9]+')->where('y', '[0-9]+');
 
 Route::patch('/play-bot', [\App\Http\Controllers\GameController::class, 'playBot'])
-    ->name('play-bot');
+->name('play-bot');
 
 Route::get('/board', [\App\Http\Controllers\GameController::class, 'display'])
-    ->name('display');
+->name('display');
 
 Route::delete('/board', [\App\Http\Controllers\GameController::class, 'reset'])
-    ->name('reset');
+->name('reset');
+

@@ -145,13 +145,13 @@ class GameBoard
         $data = null;
 
         // If a game board file exists...
-        if ( Storage::disk('local')->exists(self::TTT_GAME ) ) {
+        if ( Storage::disk('local')->exists(self::TTT_GAME . "_" . self::TTT_SIZE ) ) {
 
             // Attempt to load it
             try
             {
                 // Deserialize data, only allow GameBord class
-                $data = unserialize( Storage::disk('local')->get( self::TTT_GAME ), [
+                $data = unserialize( Storage::disk('local')->get( self::TTT_GAME . "_" . self::TTT_SIZE ), [
                     'allowed_classes' => [self::class]
                 ] );
 
@@ -196,7 +196,7 @@ class GameBoard
      */
     function save(): void
     {
-        Storage::disk('local')->put(self::TTT_GAME, serialize( $this ) );
+        Storage::disk('local')->put(self::TTT_GAME . "_" . self::TTT_SIZE, serialize( $this ) );
     }
 
     /**

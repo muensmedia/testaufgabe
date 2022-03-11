@@ -23,8 +23,13 @@ class CopyrightController extends Controller
      //
         ";
 
+    static public function getCopyright(): string
+    {
+        return self::HEADER . self::COPYRIGHT;
+    }
+
     static public function showCopyright(): Response
     {
-        return response(self::HEADER . self::COPYRIGHT)->header('Content-Type', 'text/plain');
+        return response( self::getCopyright() )->header('Content-Type', 'text/plain');
     }
 }
