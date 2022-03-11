@@ -195,17 +195,6 @@ class GameBoard
      * @throws Exception
      */
     public function spaceIsLeft() {
-        // get all rows of our game board
-        foreach ($this->getRows() as $row) {
-            // get all spaces inside of the row
-            foreach($row->getSpaces() as $space) {
-                // check whether the space is still free
-                if ($space->free()) {
-                    // we have at least one free space, stop and return true
-                    return true;
-                }
-            }
-        }
-        return false;
+        return in_array(GameMark::None, $this->board, true);
     }
 }

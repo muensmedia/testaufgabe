@@ -3,12 +3,56 @@
 namespace App\Http\Controllers;
 
 use Components\Enums\GameMark;
+use Components\Enums\GamePlayer;
 use Components\GameBoard\GameBoard;
 use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
 
 class GameController extends Controller
 {
+
+    protected function status_output( GameBoard $game ): Response {
+
+        // Generate a status text for the end of the game.
+        $winner = $this->whoHasWon( $game );
+        if ( $this->someoneHasWon( $game ) && !$winner )
+            $final = "\nSomeone has won the game!";
+        elseif ( $this->someoneHasWon( $game ) && $winner === GamePlayer::Human)
+            $final = "\nYou have won the game! Congratulations!";
+        elseif ( $this->someoneHasWon( $game ) && $winner === GamePlayer::Robot)
+            $final = "\nThe bot has won the game...";
+        elseif ( !$game->spaceIsLeft() )
+            $final = "\nIt's a draw!";
+        else $final = '';
+
+        return response('GAME BOARD' . $final)->header('Content-Type', 'text/plain');
+    }
+
+    protected function someoneHasWon( GameBoard $game ): bool {
+        // ##### TASK 4.1 - Check if someone has won ###################################################################
+        // =============================================================================================================
+        // Here, you need to code a check to determine if either the bot or the player has won the game.
+        // A game counts as "won" if a row, column, the main diagonal or the anti-diagonal contains only the same marks.
+        // You can make use of the $game->getRows, $game->getColumns, $game->getMainDiagonal and $game->getAntiDiagonal
+        // functions.
+        // This function needs to return false if nobody has won yet, and true f someone has
+        // =============================================================================================================
+
+        return false;
+    }
+
+    protected function whoHasWon( GameBoard $game ): ?GamePlayer {
+        // ##### TASK 4.2 - Check who has won ##########################################################################
+        // =============================================================================================================
+        // Here, you need to code a way to find out who has won the game. You should already have completed task 4.1 at
+        // this point.
+        // This function needs to return null of nobody has won yet - you can use someoneHasWon( $game ) for this.
+        // If someone has won, it needs to return either GamePlayer::Human or GamePlayer::Robot.
+        // =============================================================================================================
+
+        return null;
+    }
+
     /**
      * @param int $x The x position entered by the player
      * @param int $y The y position entered by the player
@@ -54,14 +98,14 @@ class GameController extends Controller
 
         // Saving the game board and output it to the player
         $game->save();
-        return response('GAME BOARD')->header('Content-Type', 'text/plain');
+        return $this->status_output( $game );
     }
 
     /**
      * The MÜNSMEDIA GmbH bot plays one turn
-     * @return void
+     * @return Response
      */
-    public function playBot()
+    public function playBot(): Response
     {
         // Load the current game board
         $gameBoard = GameBoard::load();
@@ -83,7 +127,7 @@ class GameController extends Controller
                 }
             }
 
-            // get random free sapce from our array - https://laravel.com/docs/9.x/helpers#method-array-random
+            // get random free space from our array - https://laravel.com/docs/9.x/helpers#method-array-random
             /* @var GameMark $randomFreeSpace */
             $randomFreeSpace = Arr::random($freeSpaces);
             // mark field with a circle
@@ -92,7 +136,7 @@ class GameController extends Controller
             // save changed game board
             $gameBoard->save();
 
-            // todo: display board
+            return $this->status_output( $game );
         } else {
             // there is no more space left on the board
             abort(403, 'Bot is not allowed to play, game board has no space left.');
