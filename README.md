@@ -32,8 +32,27 @@ Die Bedingung, ob Anwendungsblock 1 erneut wiederholt werden soll, wird erst nac
 
 ### Struktogramm Tic-Tac-Toe vervollständigen
 Wir haben begonnen ein Struktogramm für das Spiel Tic-Tac-Toe zu erstellen.  
-An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftiger Ausbilder Malte nicht sicher. **Kannst du ihm helfen?**
+An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftiger Ausbilder Malte nicht sicher. **Kannst Du ihm helfen?**
 
 *Bitte notiere deine Lösungen und füge diese bei Fertigstellung in deine E-Mail an uns ein.*
 
 ![tic-tac-toe-struktogramm](./docs/tic-tac-toe-struktogramm.jpg)
+
+## 2.) Programmierung vorbereiten
+Nachdem Du jetzt weißt, wie Tic-Tac-Toe funktioniert, wollen wir zusammen programmieren.  
+Keine Sorge, wenn Du bislang nur wenig oder gar nicht programmiert hast, wir steigern uns langsam 😉  
+Wir wollen deinen Quellcode sehen können und mir dir an deinem Quellcode arbeiten können, daher verwenden wir um den Quellcode kostenfrei auszutauschen, die Plattform GitHub.
+
+### Bitte erledige die folgenden Schritte
+- [ ] Du [verfügst bereits über einen GitHub-Account](https://github.com/login) **oder** [du erstellst dir einen kostenfreien GitHub-Account](https://github.com/join).
+- [ ] Nachdem Du dich bei Github.com angemeldet hast:
+- [ ] Kopiere unseren Quellcode in deinen GitHub-Account. Dazu musst du nur den [folgenden Link klicken](https://github.com/gitpod-io/template-php-laravel-mysql/generate).
+  - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
+- [ ] Im neu erstellten GitHub-Repository scrollst du runter, bis du diese Anleitung siehst.
+- [ ] Du machst nun an dieser Stelle aus deinem soeben erstellten Repository weiter.
+- [ ] [Du öffnest Gitpod](https://gitpod.io/)
+- [ ] Klicke `Continue with GitHub` und melde dich mit deinen GitHub-Zugangsdaten an.
+- [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
+- [ ] Wähle im sich öffnenden Dialog die Adresse deines eben erstellten Repository aus.
+- Die Arbeitsumgebung GitPod hat sich geöffnet und du siehst dort auch diese Anleitung.
+- [ ] Fahre mit der Anleitung in deiner Gitpod-Programmierumgebung fort.
