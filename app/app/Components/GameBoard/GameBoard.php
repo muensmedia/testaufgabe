@@ -236,8 +236,12 @@ class GameBoard
                     $gameBoardString .= '|';
                 }
 
-                // draw the game mark
-                $gameBoardString .= $space->char();
+                // if the row is the last row and the game mark is "none", draw spaces instead of underscores
+                if (($rowNumber === self::TTT_SIZE - 1) && ($space === GameMark::None)) {
+                    $gameBoardString .= '  ';
+                } else {
+                    $gameBoardString .= $space->char();
+                }
             }
 
             // close the row
