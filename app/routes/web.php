@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CopyrightController;
 use Illuminate\Support\Facades\Route;
 
 /*

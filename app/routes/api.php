@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/health', [\App\Http\Controllers\Api\HealthController::class, 'info'])
-    ->name('health');
-
-Route::post('/start', function () {
+Route::get('/start', function () {
     return CopyrightController::showCopyright();
 })->name('start');

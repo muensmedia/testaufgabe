@@ -6,11 +6,26 @@
         "description": "Testaufgabe - MÜNSMEDIA GmbH"
     },
     "servers" : [
-        { "url" : "http://testaufgabe.muensmedia.localhost", "description" : "Local development server" }
+        { "url" : "/api", "description" : "Local development server" }
     ],
-    "tags": [],
+    "tags": [
+        {"name": "start", "description": "Zeigt eine Copyright-Notiz mit deinem Namen."}
+    ],
     "paths": {
-
+        "/start": {
+            "get": {
+                "tags": ["start"],
+                "summary": "Copyright-Notiz",
+                "responses": {
+                    "200": {
+                        "description": "Copyright-Notiz",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    }
+                }
+            }
+        }
     },
     "components": {
         "parameters": {
