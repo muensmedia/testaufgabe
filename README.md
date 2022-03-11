@@ -54,7 +54,8 @@ Wir wollen deinen Quellcode sehen können und mir dir an deinem Quellcode arbeit
 - [ ] Klicke `Continue with GitHub` und melde dich mit deinen GitHub-Zugangsdaten an.
 - [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
 - [ ] Wähle im sich öffnenden Dialog die Adresse deines eben erstellten Repository aus.
-- Die Arbeitsumgebung GitPod hat sich geöffnet und du siehst dort auch diese Anleitung.
+- Die Arbeitsumgebung GitPod hat sich geöffnet.
+- [ ] Öffne dort nun diese Anleitung. Klicke dazu mit einem Rechtsklick auf die Datei `REDAME.md` und dann auf `Open Preview`.
 - [ ] Fahre mit der Anleitung in deiner Gitpod-Programmierumgebung fort.
 
 ## 3.) Copyright anpassen
@@ -63,4 +64,15 @@ Als Frontend verwenden wir das Tool `Swagger` mit dem man Schnittstellen mit ein
 Swagger haben wir dir bereits im Browserfenster geöffnet.  
 Als Backend verwenden wir eine [PHP-Anwendung](https://www.php.net/manual/en/) auf Basis des Frameworks [Laravel](https://laravel.com/docs/9.x).  
 
-Wir haben eine Funktion die das Copyright des Spiels ausgibt.
+Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt.
+
+- [ ] Öffne die Datei [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
+- [ ] In Zeile 18 wird das Copyright als String gespeichert.
+- [ ] Benutze den verlinkten ASCII Generator um dein Copyright zu erstellen.
+- [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch dein eigenes Copyright.
+- [ ] Du musst deine Änderung nun noch speichern.
+  - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücken die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
+  - Gib oben eine Textnachricht ein, die deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
+  - Speichere die Nachricht mit <kbd>⏎</kbd>
+  - Klicke den Button `Sync changes` um deine Änderungen auf GitHub hochzuladen
+  - 🎉 Du hast deinen ersten Git-Commit soeben gemacht!
