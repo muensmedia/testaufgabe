@@ -57,7 +57,7 @@ Wir wollen Deinen Quellcode sehen können und mir Dir an Deinem Quellcode arbeit
 - [ ] Klicke `Continue with GitHub` und melde Dich mit Deinen GitHub-Zugangsdaten an.
 - [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
 - [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
-- Die Arbeitsumgebung GitPod öffnet sich.
+- Die Arbeitsumgebung GitPod öffnet sich. *Das kann einige Sekunden dauern. Gedulde Dich.*
 - [ ] Öffne dort nun diese Anleitung. Klicke dazu mit einem Rechtsklick auf die Datei `REDAME.md` und dann auf `Open Preview`.
 - [ ] Fahre mit der Anleitung in Deiner Gitpod-Programmierumgebung fort.
 
