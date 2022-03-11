@@ -56,3 +56,11 @@ Wir wollen deinen Quellcode sehen können und mir dir an deinem Quellcode arbeit
 - [ ] Wähle im sich öffnenden Dialog die Adresse deines eben erstellten Repository aus.
 - Die Arbeitsumgebung GitPod hat sich geöffnet und du siehst dort auch diese Anleitung.
 - [ ] Fahre mit der Anleitung in deiner Gitpod-Programmierumgebung fort.
+
+## 3.) Copyright anpassen
+Deine Tic-Tac-Toe Webanwendung besteht aus einem Frontend und einem Backend.  
+Als Frontend verwenden wir das Tool `Swagger` mit dem man Schnittstellen mit einer grafischen Oberfläche einfach ausprobieren kann.  
+Swagger haben wir dir bereits im Browserfenster geöffnet.  
+Als Backend verwenden wir eine [PHP-Anwendung](https://www.php.net/manual/en/) auf Basis des Frameworks [Laravel](https://laravel.com/docs/9.x).  
+
+Wir haben eine Funktion die das Copyright des Spiels ausgibt.
