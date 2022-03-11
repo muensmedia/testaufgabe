@@ -152,7 +152,7 @@ class GameBoard
             {
                 // Deserialize data, only allow GameBord class
                 $data = unserialize( Storage::disk('local')->get( self::TTT_GAME ), [
-                    'allowed_classes' => self::class
+                    'allowed_classes' => [self::class]
                 ] );
 
                 // Make sure the resulting data is actually a GameBoard, otherwise throw Exception

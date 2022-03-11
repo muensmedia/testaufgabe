@@ -25,7 +25,7 @@ class GameController extends Controller
             $final = "\nIt's a draw!";
         else $final = '';
 
-        return response('GAME BOARD' . $final)->header('Content-Type', 'text/plain');
+        return response("{$game->draw()}{$final}")->header('Content-Type', 'text/plain');
     }
 
     protected function someoneHasWon( GameBoard $game ): bool {
