@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/copyright', function () {
     return CopyrightController::showCopyright();
 })->name('start');
+
+Route::patch('/play/{x}/{y}', [\App\Http\Controllers\GameController::class, 'play'])
+    ->name('play-api')->where('x', '[0-9]+')->where('y', '[0-9]+');

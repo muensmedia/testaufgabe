@@ -2,6 +2,7 @@
 
 namespace Components\GameBoard;
 
+use Components\Enums\GamePlayer;
 use Illuminate\Support\Facades\Storage;
 use Components\Enums\GameBoardSliceType;
 use Components\Enums\GameMark;
@@ -18,6 +19,9 @@ class GameBoard
 
     // Board data storage
     private array $board;
+
+    // Last player
+    private ?GamePlayer $last_player = null;
 
     private function __construct()
     {
@@ -62,6 +66,7 @@ class GameBoard
     public function setSpace(int $x, int $y, GameMark $mark)
     {
         $this->validatePosition($x,$y);
+        $this->last_player = $mark->player();
         $this->board[ $y * self::TTT_SIZE + $x ] = $mark;
     }
 
@@ -134,6 +139,15 @@ class GameBoard
 
         // Return deserialized data if it exists, otherwise create a new GameBoard
         return $data ?? new GameBoard();
+    }
+
+    /**
+     * Returns the player that did the last action
+     * @return ?GamePlayer
+     */
+    public function getLastPlayer(): ?GamePlayer
+    {
+        return $this->last_player;
     }
 
     /**
