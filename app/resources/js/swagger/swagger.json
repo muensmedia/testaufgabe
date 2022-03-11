@@ -1,21 +1,21 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Testaufgabe - MÜNSMEDIA GmbH",
+        "title": "Tic-Tac-Toe - MÜNSMEDIA GmbH",
         "version": "2.0.0",
-        "description": "Testaufgabe - MÜNSMEDIA GmbH"
+        "description": "Testaufgabe der MÜNSMEDIA GmbH"
     },
     "servers" : [
         { "url" : "/api", "description" : "Local development server" }
     ],
     "tags": [
-        {"name": "start", "description": "Zeigt eine Copyright-Notiz mit deinem Namen."},
+        {"name": "copyright", "description": "Zeigt eine Copyright-Notiz mit deinem Namen."},
         {"name": "tic-tac-toe", "description": "Interaktion mit dem Tic-Tac-Toe Spiel"}
     ],
     "paths": {
-        "/start": {
+        "/copyright": {
             "get": {
-                "tags": ["start"],
+                "tags": ["copyright"],
                 "summary": "Copyright-Notiz",
                 "responses": {
                     "200": {

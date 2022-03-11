@@ -41,7 +41,7 @@ enum GameMark
 
     public function char(): string {
         return match ($this) {
-            self::None   => ' ',
+            self::None   => '__',
             self::Cross  => '❌',
             self::Circle => '⭕'
         };
