@@ -25,8 +25,8 @@ class GameBoard
 
     private function __construct()
     {
-        // Create an empty 3x3 board
-        $this->board = array_fill(0, self::TTT_SIZE * self::TTT_SIZE, GameMark::None);
+        // Start with an empty board
+        $this->clear();
     }
 
     /**
@@ -152,7 +152,7 @@ class GameBoard
             {
                 // Deserialize data, only allow GameBord class
                 $data = unserialize( Storage::disk('local')->get( self::TTT_GAME ), [
-                    'allowed_classes' => self::class
+                    'allowed_classes' => [self::class]
                 ] );
 
                 // Make sure the resulting data is actually a GameBoard, otherwise throw Exception
@@ -181,6 +181,16 @@ class GameBoard
     }
 
     /**
+     * Clears the GameBoard
+     * @return void
+     */
+    function clear(): void
+    {
+        // Create a square empty board based on TTT_SIZE
+        $this->board = array_fill(0, self::TTT_SIZE * self::TTT_SIZE, GameMark::None);
+    }
+
+    /**
      * Saves the GameBoard
      * @return void
      */
@@ -196,5 +206,44 @@ class GameBoard
      */
     public function spaceIsLeft() {
         return in_array(GameMark::None, $this->board, true);
+    }
+
+    /**
+     * Draws the game board
+     * @return string
+     */
+    public function draw(): string
+    {
+        $gameBoardString = '   ';
+
+        // draw the first row with the column numbers
+        for ($i = 0; $i < self::TTT_SIZE; $i++) {
+            $gameBoardString .= "$i  ";
+        }
+
+        $gameBoardString .= "\n";
+
+        // iterate over all rows
+        foreach ($this->getRows() as $rowNumber => $row) {
+
+            // draw the row number in each row
+            $gameBoardString .= $rowNumber . ' ';
+
+            // get all spaces inside of the row
+            foreach ($row->getSpaces() as $columnNumber => $space) {
+
+                if ($columnNumber !== 0) {
+                    $gameBoardString .= '|';
+                }
+
+                // draw the game mark
+                $gameBoardString .= $space->char();
+            }
+
+            // close the row
+            $gameBoardString .= "\n";
+        }
+
+        return $gameBoardString;
     }
 }

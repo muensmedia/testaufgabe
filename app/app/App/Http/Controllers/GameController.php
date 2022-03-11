@@ -25,7 +25,7 @@ class GameController extends Controller
             $final = "\nIt's a draw!";
         else $final = '';
 
-        return response('GAME BOARD' . $final)->header('Content-Type', 'text/plain');
+        return response("{$game->draw()}{$final}")->header('Content-Type', 'text/plain');
     }
 
     protected function someoneHasWon( GameBoard $game ): bool {
@@ -161,5 +161,19 @@ class GameController extends Controller
         $gameBoard->save();
 
         return $this->status_output($gameBoard);
+    }
+
+    /**
+     * Rests the board
+     * @return Response
+     */
+    public function reset(): Response
+    {
+        // Load the current game board
+        $gameBoard = GameBoard::load();
+        $gameBoard->clear();
+        $gameBoard->save();
+
+        return $this->status_output( $gameBoard );
     }
 }

@@ -97,6 +97,20 @@
                     }
                 }
             }
+        },
+        "/board": {
+            "delete": {
+                "tags": ["tic-tac-toe"],
+                "summary": "Löscht das aktuelle Spielbrett und beginnt ein neues Spiel.",
+                "responses": {
+                    "200": {
+                        "description": "Spielbrett erfolgreich geleert.",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

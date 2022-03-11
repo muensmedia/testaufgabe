@@ -23,3 +23,6 @@ Route::patch('/play/{x}/{y}', [\App\Http\Controllers\GameController::class, 'pla
 
 Route::patch('/play-bot', [\App\Http\Controllers\GameController::class, 'playBot'])
     ->name('play-bot');
+
+Route::delete('/board', [\App\Http\Controllers\GameController::class, 'reset'])
+    ->name('reset');
