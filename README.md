@@ -87,7 +87,7 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️
   - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
   - Speichere die Nachricht mit <kbd>Strg</kbd><kbd>⏎</kbd>
   - Klicke nun im Dialog auf `Yes`, um alle Deine Änderungen zum Commit hinzuzufügen.
-  - Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen. Hier must du ebenfalls mit `OK` bestätigen.
+  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must du ebenfalls mit `OK` bestätigen.
   - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
 
 ## 3.) Methode /play schreiben
