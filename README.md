@@ -1,7 +1,7 @@
 # Testaufgabe Ausbildung Fachinformtiker*in Anwendungsentwicklung
 Diese Testaufgabe gilt es zu lösen, wenn Du einen Ausbildungsplatz bei der [MÜNSMEDIA GmbH](https://muensmedia.de) als Fachinformatiker*in Anwendungentwicklung ergattern willst.  
   
-##Tic-Tac-Toe
+## Tic-Tac-Toe
 [Tic-Tac-Toe](https://de.wikipedia.org/wiki/Tic-Tac-Toe) oder Drei gewinnt, ist ein einfaches Zweipersonen-Strategiespiel, das Du bestimmt schon selber gespielt hast.
 
 ## Spielablauf
