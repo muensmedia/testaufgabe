@@ -1,0 +1,117 @@
+version: "3"
+
+services:
+  nginx:
+    image: wodby/nginx:1.19-5.10.9
+    container_name: "${PROJECT_NAME}_nginx"
+    restart: unless-stopped
+    depends_on:
+      - php
+    environment:
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_BACKEND_HOST: php
+      NGINX_VHOST_PRESET: php
+      NGINX_SERVER_ROOT: /var/www/html/public
+      NGINX_DISABLE_CACHING: $NGINX_DISABLE_CACHING
+      NGINX_SERVER_EXTRA_CONF_FILEPATH: /var/www/html/nginx-extra.conf
+    volumes:
+      - $MNTDIR/current/:/var/www/html
+      - $STORAGEDIR:/var/www/html/storage
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
+      - "traefik.http.routers.${PROJECT_NAME}_nginx.entrypoints=https"
+      - "traefik.http.routers.${PROJECT_NAME}_nginx.tls=true"
+    networks:
+      - traefik-proxy
+      - internal
+
+  mariadb:
+    image: wodby/mariadb:10.5-3.9.5
+    container_name: "${PROJECT_NAME}_mariadb"
+    stop_grace_period: 30s
+    restart: unless-stopped
+    ports:
+      - "${EXPOSE_DB_PORT}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
+      MYSQL_DATABASE: $DB_NAME
+      MYSQL_USER: $DB_USER
+      MYSQL_PASSWORD: $DB_PASSWORD
+    volumes:
+      - maridb-vol:/var/lib/mysql # I want to manage volumes manually.
+    networks:
+      - traefik-proxy
+      - internal
+
+  php:
+    image: wodby/php:8.1
+    container_name: "${PROJECT_NAME}_php"
+    restart: unless-stopped
+    environment:
+      # todo: how to send mails?
+      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+      DB_HOST: $DB_HOST
+      DB_USER: $DB_USER
+      DB_PASSWORD: $DB_PASSWORD
+      DB_NAME: $DB_NAME
+      PHP_FPM_USER: wodby
+      PHP_FPM_GROUP: wodby
+      APP_ENV: $APP_ENV
+    volumes:
+      - $MNTDIR/current/:/var/www/html
+      - $STORAGEDIR:/var/www/html/storage
+    networks:
+      - traefik-proxy
+      - internal
+
+#  crond:
+#    image: wodby/php:8.1
+#    restart: unless-stopped
+#    environment:
+#      # todo: how to send mails?
+#      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+#      DB_HOST: $DB_HOST
+#      DB_USER: $DB_USER
+#      DB_PASSWORD: $DB_PASSWORD
+#      DB_NAME: $DB_NAME
+#      PHP_FPM_USER: wodby
+#      PHP_FPM_GROUP: wodby
+#      APP_ENV: $APP_ENV
+#    volumes:
+#      - $MNTDIR/current/:/var/www/html
+#      - $STORAGEDIR:/var/www/html/storage
+#    command: php artisan queue:work --queue=high,checks,default,low --sleep=3 --max-time=3600
+#    networks:
+#      - traefik-proxy
+#      - internal
+
+  cron-work:
+    image: wodby/php:8.1
+    restart: unless-stopped
+    environment:
+      # todo: how to send mails?
+      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+      DB_HOST: $DB_HOST
+      DB_USER: $DB_USER
+      DB_PASSWORD: $DB_PASSWORD
+      DB_NAME: $DB_NAME
+      PHP_FPM_USER: wodby
+      PHP_FPM_GROUP: wodby
+      APP_ENV: $APP_ENV
+      CRONTAB: "* * * * * cd /var/www/html && php artisan schedule:run >> /dev/null 2>&1"
+    command: sudo -E LD_PRELOAD=/usr/lib/preloadable_libiconv.so crond -f -d 0
+    volumes:
+      - $MNTDIR/current/:/var/www/html
+      - $STORAGEDIR:/var/www/html/storage
+    networks:
+      - traefik-proxy
+      - internal
+volumes:
+  maridb-vol:
+
+networks:
+  traefik-proxy:
+    external: true
+  internal:
+    external: false

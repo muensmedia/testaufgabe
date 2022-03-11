@@ -1,0 +1,12 @@
+css/
+images/
+js/
+fonts
+sitemap.xml
+browserconfig.xml
+manifest.json
+mix-manifest.json
+ms-icon-*.png
+favicon-*.png
+apple*.png
+android*.png
