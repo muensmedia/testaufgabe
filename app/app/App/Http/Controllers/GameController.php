@@ -42,22 +42,22 @@ class GameController extends Controller
             $freeSpaces = [];
 
             // get all rows of our game board
-            foreach ($gameBoard->getRows() as $row) {
+            foreach ($gameBoard->getRows() as $y => $row) {
                 // get all spaces inside of the row
-                foreach ($row->getSpaces() as $space) {
+                foreach ($row->getSpaces() as $x => $space) {
                     // check whether the space is still free
                     if ($space->free()) {
                         // save the free space to our free spaces array
-                        $freeSpaces[] = $space;
+                        $freeSpaces[] = ['x' => $x, 'y' => $y];
                     }
                 }
             }
 
             // get random free sapce from our array - https://laravel.com/docs/9.x/helpers#method-array-random
-            /* @var GameMark $randomFreeSpace */
-            $randomFreeSpace = Arr::random($freeSpaces);
+            $randomFreeSpaceXY = Arr::random($freeSpaces);
+
             // mark field with a circle
-            $randomFreeSpace->player(GameMark::Circle);
+            $gameBoard->setSpace($randomFreeSpaceXY['x'], $randomFreeSpaceXY['y'], GameMark::Circle);
 
             // save changed game board
             $gameBoard->save();
@@ -67,6 +67,5 @@ class GameController extends Controller
             // there is no more space left on the board
             abort(403, 'Bot is not allowed to play, game board has no space left.');
         }
-
     }
 }
