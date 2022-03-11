@@ -84,3 +84,18 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt.
   - Speichere die Nachricht mit <kbd>⏎</kbd>
   - Klicke den Button `Sync changes` um deine Änderungen auf GitHub hochzuladen
   - 🎉 Du hast deinen ersten Git-Commit soeben gemacht!
+
+## 3.) Methode /play schreiben
+Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.  
+Es fehlt noch die Logik, was bei einem Aufruf der `/play`-API-Route passieren soll.
+
+### Struktogramm für einen Spielzug
+Anbei das Struktogramm für einen Spielzug von Dir.
+
+![](./docs/struktogramm-spielzug.jpg)
+
+**To-do:**
+- [ ] Schau Dir in Ruhe das Struktogramm für einen Spielzug von Dir an!
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile xyz fehlt noch die Logik.
+  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
+- [ ] Teste deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
