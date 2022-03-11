@@ -49,7 +49,7 @@ Wir wollen Deinen Quellcode sehen können und mir Dir an Deinem Quellcode arbeit
 ### Bitte erledige die folgenden Schritte
 - [ ] Du [verfügst bereits über einen GitHub-Account](https://github.com/login) **oder** [Du erstellst Dir einen kostenfreien GitHub-Account](https://github.com/join).
 - [ ] Nachdem Du Dich bei Github.com angemeldet hast:
-- [ ] Kopiere unseren Quellcode in Deinen GitHub-Account. Dazu musst Du nur den [folgenden Link klicken](https://github.com/gitpod-io/muensmedia/testaufgabe).
+- [ ] Kopiere unseren Quellcode in Deinen GitHub-Account. Dazu musst Du nur den [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
   - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
 - [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
 - [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
