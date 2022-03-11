@@ -9,7 +9,8 @@
         { "url" : "/api", "description" : "Local development server" }
     ],
     "tags": [
-        {"name": "copyright", "description": "Zeigt eine Copyright-Notiz mit deinem Namen."}
+        {"name": "copyright", "description": "Zeigt eine Copyright-Notiz mit deinem Namen."},
+        {"name": "tic-tac-toe", "description": "Interaktion mit dem Tic-Tac-Toe Spiel"}
     ],
     "paths": {
         "/copyright": {
@@ -19,6 +20,57 @@
                 "responses": {
                     "200": {
                         "description": "Copyright-Notiz",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    }
+                }
+            }
+        },
+
+        "/play/{x}/{y}": {
+            "patch": {
+                "tags": ["tic-tac-toe"],
+                "summary": "Führt einen Spielzug aus",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "x",
+                        "required": true,
+                        "description": "X-Position des zu markierenden Felds",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 3
+                        }
+                    },
+                    {
+                        "in": "path",
+                        "name": "y",
+                        "required": true,
+                        "description": "Y-Position des zu markierenden Felds",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 3
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Spielzug erfolgreich ausgeführt, neue Spielsituation wird angezeigt.",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    },
+                    "403": {
+                        "description": "Spielzug unmöglich, Feld bereits belegt.",
+                        "content": {
+                            "text/plain": {}
+                        }
+                    },
+                    "422": {
+                        "description": "Spielzug unmöglich, X- oder Y-Position liegt außerhalb des Spielbretts",
                         "content": {
                             "text/plain": {}
                         }
