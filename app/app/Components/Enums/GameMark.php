@@ -38,4 +38,12 @@ enum GameMark
     {
         return !$this->free();
     }
+
+    public function char(): string {
+        return match ($this) {
+            self::None   => ' ',
+            self::Cross  => '❌',
+            self::Circle => '⭕'
+        };
+    }
 }
