@@ -51,8 +51,8 @@ class GameBoard
      */
     public function getSpace(int $x, int $y): GameMark
     {
-        $this->validatePosition($x, $y);
-        return $this->board[$y * self::TTT_SIZE + $x];
+        $this->validatePosition($x,$y);
+        return $this->board[ $y * self::TTT_SIZE + $x ];
     }
 
     /**
@@ -65,18 +65,18 @@ class GameBoard
      */
     public function setSpace(int $x, int $y, GameMark $mark)
     {
-        $this->validatePosition($x, $y);
+        $this->validatePosition($x,$y);
         $this->last_player = $mark->player();
-        $this->board[$y * self::TTT_SIZE + $x] = $mark;
+        $this->board[ $y * self::TTT_SIZE + $x ] = $mark;
     }
 
     /**
      * Returns an entire row
      * @throws Exception
      */
-    public function getRow(int $row): GameBoardSlice
+    public function getRow(int $row ): GameBoardSlice
     {
-        return new GameBoardSlice($this, GameBoardSliceType::Row, self::TTT_SIZE, $row);
+        return new GameBoardSlice( $this, GameBoardSliceType::Row, self::TTT_SIZE, $row );
     }
 
     /**
@@ -98,9 +98,9 @@ class GameBoard
      * Returns an entire column
      * @throws Exception
      */
-    public function getColumn(int $col): GameBoardSlice
+    public function getColumn(int $col ): GameBoardSlice
     {
-        return new GameBoardSlice($this, GameBoardSliceType::Column, self::TTT_SIZE, $col);
+        return new GameBoardSlice( $this, GameBoardSliceType::Column, self::TTT_SIZE, $col );
     }
 
     /**
@@ -122,9 +122,8 @@ class GameBoard
      * Returns the main diagonal
      * @throws Exception
      */
-    public function getMainDiagonal(): GameBoardSlice
-    {
-        return new GameBoardSlice($this, GameBoardSliceType::MainDiagonal, self::TTT_SIZE);
+    public function getMainDiagonal(): GameBoardSlice {
+        return new GameBoardSlice( $this, GameBoardSliceType::MainDiagonal, self::TTT_SIZE );
     }
 
     /**
@@ -133,7 +132,7 @@ class GameBoard
      */
     public function getAntiDiagonal(): GameBoardSlice
     {
-        return new GameBoardSlice($this, GameBoardSliceType::AntiDiagonal, self::TTT_SIZE);
+        return new GameBoardSlice( $this, GameBoardSliceType::AntiDiagonal, self::TTT_SIZE );
     }
 
     /**
@@ -146,20 +145,23 @@ class GameBoard
         $data = null;
 
         // If a game board file exists...
-        if (Storage::disk('local')->exists(self::TTT_GAME)) {
+        if ( Storage::disk('local')->exists(self::TTT_GAME ) ) {
 
             // Attempt to load it
-            try {
+            try
+            {
                 // Deserialize data, only allow GameBord class
-                $data = unserialize(Storage::disk('local')->get(self::TTT_GAME), [
+                $data = unserialize( Storage::disk('local')->get( self::TTT_GAME ), [
                     'allowed_classes' => self::class
-                ]);
+                ] );
 
                 // Make sure the resulting data is actually a GameBoard, otherwise throw Exception
-                if (!is_a($data, self::class))
+                if ( !is_a( $data, self::class ) )
                     throw new Exception('Unable to unserialize.');
 
-            } catch (Throwable $e) {
+            }
+            catch (Throwable $e)
+            {
                 // In case deserialization goes wrong, reset data to null
                 $data = null;
             }
@@ -184,7 +186,7 @@ class GameBoard
      */
     function save(): void
     {
-        Storage::disk('local')->put(self::TTT_GAME, serialize($this));
+        Storage::disk('local')->put(self::TTT_GAME, serialize( $this ) );
     }
 
     /**
@@ -192,20 +194,8 @@ class GameBoard
      * @return bool
      * @throws Exception
      */
-    public function spaceIsLeft()
-    {
-        // get all rows of our game board
-        foreach ($this->getRows() as $row) {
-            // get all spaces inside of the row
-            foreach ($row->getSpaces() as $space) {
-                // check whether the space is still free
-                if ($space->free()) {
-                    // we have at least one free space, stop and return true
-                    return true;
-                }
-            }
-        }
-        return false;
+    public function spaceIsLeft() {
+        return in_array(GameMark::None, $this->board, true);
     }
 
     /**
