@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\CopyrightController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/health', [\App\Http\Controllers\Api\HealthController::class, 'info'])
     ->name('health');
+
+Route::post('/start', function () {
+    return CopyrightController::showCopyright();
+})->name('start');
