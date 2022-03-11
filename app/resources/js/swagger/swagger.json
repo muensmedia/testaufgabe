@@ -28,7 +28,7 @@
             }
         },
 
-        "/play": {
+        "/play/{x}/{y}": {
             "patch": {
                 "tags": ["tic-tac-toe"],
                 "summary": "Führt einen Spielzug aus",
