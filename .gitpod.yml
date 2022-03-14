@@ -17,5 +17,4 @@ tasks:
       php artisan key:generate &&
       npm run dev
     command: >
-      cd app &&
       php -S 0.0.0.0:8000 -t public

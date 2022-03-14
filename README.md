@@ -57,7 +57,9 @@ Wir wollen Deinen Quellcode sehen können und mir Dir an Deinem Quellcode arbeit
 - [ ] Klicke `Continue with GitHub` und melde Dich mit Deinen GitHub-Zugangsdaten an.
 - [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
 - [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
-- Die Arbeitsumgebung GitPod öffnet sich. *Das kann bis zu 5 Minuten dauern 😳. Gedulde Dich.*
+- Die Arbeitsumgebung GitPod öffnet sich.
+- [ ] **Wähle `Dont wait for prebuild`**
+- Gitpod öffnet sich, *das kann bis zu 5 Minuten dauern 😳. Gedulde Dich.*
 - [ ] Öffne **in der Zwischenzeit** https://gitpod.io/integrations
 - [ ] Klicke in der Zeile `GitHub github.com` hinten auf die `drei Punkte` und dann auf `Edit Permissions`
 - [ ] Wähle dann zusätzlich `public_repo` und `repo` aus und speichere mit mit `Update permissions`
@@ -110,7 +112,7 @@ Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
 - [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile 144 fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
-- [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `/board`**
+- [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `DELETE /board`**
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
