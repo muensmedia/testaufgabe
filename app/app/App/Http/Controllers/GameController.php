@@ -225,8 +225,8 @@ class GameController extends Controller
         // get random free space from our array - https://laravel.com/docs/9.x/helpers#method-array-random
         $randomFreeSpaceXY = Arr::random($freeSpaces);
 
-        // mark field with a circle
-        $game->setSpace($randomFreeSpaceXY['x'], $randomFreeSpaceXY['y'], GameMark::Circle);
+        // mark field with a cross
+        $game->setSpace($randomFreeSpaceXY['x'], $randomFreeSpaceXY['y'], GameMark::Cross);
 
         // save changed game board
         $game->save();
