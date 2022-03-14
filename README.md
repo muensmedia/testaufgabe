@@ -97,7 +97,7 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️
   - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must Du ebenfalls mit `OK` bestätigen.
   - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
 
-## 3.) Methode /play schreiben
+## 4.) Methode /play schreiben
 Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.  
 Es fehlt noch die Logik, was bei einem Aufruf der `/play`-API-Route passieren soll.
 
@@ -116,11 +116,11 @@ Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
-## 4.) Der 🤖 spielt - /play-bot
+## 5.) Der 🤖 spielt - /play-bot
 Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
 Öffne dazu Swagger und verwende im Wechsel (Du beginnst) die `/play`-API-Route und die `/play-bot`-API-Route.
 
-## 5.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+## 6.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
 Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr nicht an der Reihe seit.  
 So macht das natürlich keinen Spaß 😞! 
 
@@ -131,7 +131,7 @@ So macht das natürlich keinen Spaß 😞!
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
-## 6.) Wer hat gewonnen? 🏆
+## 7.) Wer hat gewonnen? 🏆
 Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
 Es ist an Dir das zu ändern.
 
@@ -145,7 +145,7 @@ Es ist an Dir das zu ändern.
 ## Zusatzaufgaben
 Dir hat das alles großen Spaß gemacht und Du willst noch mehr, kein Problem 😈!
 
-### 7.) Methode someoneHasWon() verschönern ✨
+### 8.) Methode someoneHasWon() verschönern ✨
 Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
 Kannst Du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
 Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` anschaust:
@@ -158,7 +158,7 @@ Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` ans
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
-### 8.) 4x4 Tic-Tac-Toe 😈
+### 9.) 4x4 Tic-Tac-Toe 😈
 Überlege Dir, was Du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
 Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php) genauer an.
 

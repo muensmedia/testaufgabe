@@ -102,7 +102,7 @@ class GameController extends Controller
     }
 
     protected function whoHasWon( GameBoard $game ): ?GamePlayer {
-        // ##### TASK 6 - Check who has won ############################################################################
+        // ##### TASK 8 - Check who has won ############################################################################
         // =============================================================================================================
         // Here, you need to code a way to find out who has won the game.
         // This function needs to return null if nobody has won yet - you can use someoneHasWon( $game ) for this.
@@ -120,7 +120,7 @@ class GameController extends Controller
      */
     protected function isAllowedToPlay( GameBoard $game, GamePlayer $player) : bool {
 
-        // ##### TASK 5 - No cheating! #################################################################################
+        // ##### TASK 6 - No cheating! #################################################################################
         // =============================================================================================================
         // We don't want the player to be able to cheat. They should only be able to make a move if it is their turn.
         // Neither the player nor the bot are allowed to make a move twice in a row. So, you need to check which player
@@ -159,7 +159,7 @@ class GameController extends Controller
         if (!$this->isAllowedToPlay($game, GamePlayer::Human))
             return response("You are not allowed to play. It is the bots turn!")->setStatusCode(403)->header('Content-Type', 'text/plain');
 
-        // ##### TASK 3 - Let the player make their move ###############################################################
+        // ##### TASK 4 - Let the player make their move ###############################################################
         // =============================================================================================================
         // Here, you need to code the logic that allows a player to make a move.
         // You can make use of the methods offered by the $game object.
@@ -196,7 +196,7 @@ class GameController extends Controller
         // Load the current game board
         $game = GameBoard::load();
 
-        // ##### TASK 4 - Understand the bot ###########################################################################
+        // ##### TASK 5 - Understand the bot ###########################################################################
         // =============================================================================================================
         // This first step to beat your enemy is to thoroughly understand them.
         // Luckily, as a developer, you can literally look into its head. So, check out the bot logic and try to
