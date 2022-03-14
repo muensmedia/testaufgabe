@@ -95,17 +95,19 @@ Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.
 Es fehlt noch die Logik, was bei einem Aufruf der `/play`-API-Route passieren soll.
 
 ### Struktogramm für einen Spielzug
-Anbei das Struktogramm für einen Spielzug von Dir.
+Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
 
 ![](./docs/struktogramm-spielzug.jpg)
 
 **To-do:**
 - [ ] Schau Dir in Ruhe das Struktogramm für einen Spielzug von Dir an!
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile xyz fehlt noch die Logik.
+  - Die von dir noch zu implementierenden Teile des Spielzugs haben wir im Struktogramm farblich hervorgehoben.
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile 144 fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
 - [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `/board`**
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ## 4.) Der 🤖 spielt - /play-bot
 Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
@@ -116,20 +118,22 @@ Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr 
 So macht das natürlich keinen Spaß 😞! 
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `isAllowedToPlay()` - Zeile xyz fehlt noch die Logik.
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `isAllowedToPlay()` - Zeile 121 fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste deine Änderung in Swagger ausführlich
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ## 6.) Wer hat gewonnen? 🏆
 Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
 Es ist an dir das zu ändern.
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile xyz fehlt noch die Logik.
+- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile 104 fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste deine Änderung in Swagger ausführlich
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ## Zusatzaufgaben
 Dir hat das alles großen Spaß gemacht und du willst noch mehr, kein Problem 😈!
@@ -143,6 +147,7 @@ Dazu kann es hilfreich sein, wenn Du dir die Methoden des `$game` anzeigen läss
 - [ ] Verschönere die Methode `someoneHasWon()`
 - [ ] Teste deine Änderung in Swagger ausführlich
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ### 8.) 4x4 Tic-Tac-Toe 😈
 Überlege Dir, was du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
@@ -153,3 +158,10 @@ Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/
   - Insbesondere Zusatzaufgabe 7.) wird dazu notwendig sein.
 - [ ] Teste deine Änderung in Swagger ausführlich
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
+- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+
+# ➡ Wie geht es weiter?
+Sende uns die Lösung zu Aufgabe 1 sowie den Link zu Deinem Github-Repository per E-Mail, sobald Du fertig bist.  
+Wir werden Deine Lösung auswerten und Dich zu einem persönlichen Kennenlerngespräch einladen, sofern Du unter die besten 5 Bewerber*innen kommst.
+
+Wir freuen uns auf Dich!

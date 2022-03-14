@@ -171,11 +171,8 @@ class GameController extends Controller
         // Once all the checks have passed, you can finally update the game board by calling
         // $game->setSpace( $x, $y, GameMark::Circle ).
 
-        // [ The code to check if the player is allowed to make a move goes here ]
-        // If the player is not allowed to make a move, run the code in the line below by removing the //
-        // return response("Don't cheat, it's not your turn yet!")->setStatusCode(403)->header('Content-Type', 'text/plain');
-
         // [ The code to check if the space is free goes here ]
+
         // If the space is not free, run the code in the line below by removing the //
         //return response("This space has already been claimed!")->setStatusCode(403)->header('Content-Type', 'text/plain');
 
@@ -215,7 +212,7 @@ class GameController extends Controller
 
         // get all rows of our game board
         foreach ($game->getRows() as $y => $row) {
-            // get all spaces inside of the row
+            // get all spaces inside the row
             foreach ($row->getSpaces() as $x => $space) {
                 // check whether the space is still free
                 if ($space->free()) {
