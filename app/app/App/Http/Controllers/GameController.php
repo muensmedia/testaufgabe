@@ -168,9 +168,12 @@ class GameController extends Controller
         // We've previously ensured that the player is allowed to play and the game has not ended yet.
         // The method $game->getSpace( $x, $y ) will return the content of a space - either GameMark::None (free),
         // GameMark::Cross (belongs to the bot) or GameMark::Circle (belongs to the player).
+        // You can compare two values with
+        // $a === $b       gets true if $a is equals $b
+        // $a !== $b       gets true if $a is not equals $b
+        //
         // Once all the checks have passed, you can finally update the game board by calling
         // $game->setSpace( $x, $y, GameMark::Circle ).
-
         // [ The code to check if the space is free goes here ]
 
         // If the space is not free, run the code in the line below by removing the //
