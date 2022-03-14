@@ -94,7 +94,7 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️
   - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
   - Speichere die Nachricht mit <kbd>Strg</kbd><kbd>⏎</kbd>
   - Klicke nun im Dialog auf `Yes`, um alle Deine Änderungen zum Commit hinzuzufügen.
-  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must du ebenfalls mit `OK` bestätigen.
+  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must Du ebenfalls mit `OK` bestätigen.
   - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
 
 ## 3.) Methode /play schreiben
@@ -108,7 +108,7 @@ Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
 
 **To-do:**
 - [ ] Schau Dir in Ruhe das Struktogramm für einen Spielzug von Dir an!
-  - Die von dir noch zu implementierenden Teile des Spielzugs haben wir im Struktogramm farblich hervorgehoben.
+  - Die von Dir noch zu implementierenden Teile des Spielzugs haben wir im Struktogramm farblich hervorgehoben.
 - [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile 144 fehlt noch die Logik.
   - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
 - [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
@@ -133,7 +133,7 @@ So macht das natürlich keinen Spaß 😞!
 
 ## 6.) Wer hat gewonnen? 🏆
 Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
-Es ist an dir das zu ändern.
+Es ist an Dir das zu ändern.
 
 **To-do:**
 - [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile 104 fehlt noch die Logik.
@@ -143,12 +143,14 @@ Es ist an dir das zu ändern.
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ## Zusatzaufgaben
-Dir hat das alles großen Spaß gemacht und du willst noch mehr, kein Problem 😈!
+Dir hat das alles großen Spaß gemacht und Du willst noch mehr, kein Problem 😈!
 
 ### 7.) Methode someoneHasWon() verschönern ✨
 Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
-Kannst du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
-Dazu kann es hilfreich sein, wenn Du dir die Methoden des `$game` anzeigen lässt, dazu tippst du einfach `$game->` und wartest etwas.
+Kannst Du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
+Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` anschaust:
+[app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php)
+
 
 **To-do:**
 - [ ] Verschönere die Methode `someoneHasWon()`
@@ -157,7 +159,7 @@ Dazu kann es hilfreich sein, wenn Du dir die Methoden des `$game` anzeigen läss
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ### 8.) 4x4 Tic-Tac-Toe 😈
-Überlege Dir, was du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
+Überlege Dir, was Du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
 Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php) genauer an.
 
 **To-do:**
