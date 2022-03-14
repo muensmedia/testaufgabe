@@ -188,6 +188,8 @@ class GameBoard
     {
         // Create a square empty board based on TTT_SIZE
         $this->board = array_fill(0, self::TTT_SIZE * self::TTT_SIZE, GameMark::None);
+        // reset last player
+        $this->last_player = null;
     }
 
     /**
