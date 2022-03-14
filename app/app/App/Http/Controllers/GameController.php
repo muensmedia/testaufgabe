@@ -105,7 +105,7 @@ class GameController extends Controller
         // ##### TASK 6 - Check who has won ############################################################################
         // =============================================================================================================
         // Here, you need to code a way to find out who has won the game.
-        // This function needs to return null of nobody has won yet - you can use someoneHasWon( $game ) for this.
+        // This function needs to return null if nobody has won yet - you can use someoneHasWon( $game ) for this.
         // If someone has won, it needs to return either GamePlayer::Human or GamePlayer::Robot.
         // =============================================================================================================
 
