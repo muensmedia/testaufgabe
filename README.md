@@ -81,7 +81,8 @@ Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️
 - [ ] Benutze den in der `CopyrightController.php` verlinkten ASCII Generator um Dein persönliches Copyright zu erstellen.
 - [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch Dein eigenes Copyright.
 - [ ] Probier Dein neues Copyright mit Swagger aus!
-- [ ] Du musst Deine Änderung nun noch speichern - **committen** genannt.
+- [ ] Du musst Deine Änderung nun noch speichern - **committen** genannt (siehe nächster Abschnitt).
+
 #### ✅ Commit erstellen:
   - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücke die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
   - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
