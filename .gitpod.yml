@@ -8,7 +8,6 @@ ports:
 
 tasks:
   - init: >
-      cd app &&
       cp .env.gitpod .env &&
       sed -i "s|APP_URL=|APP_URL=${GITPOD_WORKSPACE_URL}|g" .env &&
       sed -i "s|APP_URL=https://|APP_URL=https://8000-|g" .env &&
@@ -16,5 +15,7 @@ tasks:
       npm i &&
       php artisan key:generate &&
       npm run dev
+    before: >
+      cd app
     command: >
       php -S 0.0.0.0:8000 -t public
