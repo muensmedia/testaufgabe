@@ -52,8 +52,9 @@ Wir wollen Deinen Quellcode sehen können und mit Dir an Deinem Quellcode arbeit
   - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
 - [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
 - [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
-- [ ] [Du öffnest Gitpod](https://gitpod.io/new)
-- [ ] Klicke `Continue with GitHub` und melde Dich mit Deinen GitHub-Zugangsdaten an.
+- [ ] [Du öffnest Gitpod](https://gitpod.io/workspaces)
+- [ ] Klicke `Continue with GitHub`, wähle `Authorize gitpod-io` und melde Dich mit Deinen GitHub-Zugangsdaten an.
+- [ ] Stelle sicher, dass Du nun auf der Seite https://gitpod.io/workspaces bist.
 - [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
 - [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
 - Die Arbeitsumgebung GitPod öffnet sich.
