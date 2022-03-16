@@ -30,7 +30,6 @@ Wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen
 Trifft die Bedingung nicht zu (falsch), wird der Anweisungsblock 2 durchlaufen (if then else). Ein Anweisungsblock kann aus einer oder mehreren Anweisungen bestehen.
 ### Schleife mit Ausgangsbedingung
 ![](https://upload.wikimedia.org/wikipedia/commons/d/da/FussgesteuerteSchleife.png)  
-Der Schleifenkörper (Anweisungsblock 1) wird mindestens einmal durchlaufen, auch wenn die Bedingung von Anfang an nicht zutreffend (falsch) war!  
 Die Bedingung, ob Anwendungsblock 1 erneut wiederholt werden soll, wird erst nach dem Durchlauf (dem Ausführen von Anwendungsblock 1) geprüft. Daraus ergibt sich, dass Anwendungsblock 1 mindestens einmal durchlaufen werden muss.
 
 ### Struktogramm Tic-Tac-Toe vervollständigen
@@ -44,7 +43,7 @@ An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftige
 ## 2.) Programmierung vorbereiten
 Nachdem Du jetzt weißt, wie Tic-Tac-Toe funktioniert, wollen wir zusammen programmieren.  
 Keine Sorge, wenn Du bislang nur wenig oder gar nicht programmiert hast, wir steigern uns langsam 😉  
-Wir wollen Deinen Quellcode sehen können und mir Dir an Deinem Quellcode arbeiten können, daher verwenden wir um den Quellcode kostenfrei auszutauschen, die Plattform GitHub.
+Wir wollen Deinen Quellcode sehen können und mit Dir an Deinem Quellcode arbeiten können, daher verwenden wir um den Quellcode kostenfrei auszutauschen, die Plattform GitHub.
 
 ### Bitte erledige die folgenden Schritte
 - [ ] Du [verfügst bereits über einen GitHub-Account](https://github.com/login) **oder** [Du erstellst Dir einen kostenfreien GitHub-Account](https://github.com/join).
@@ -53,7 +52,7 @@ Wir wollen Deinen Quellcode sehen können und mir Dir an Deinem Quellcode arbeit
   - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
 - [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
 - [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
-- [ ] [Du öffnest Gitpod](https://gitpod.io/)
+- [ ] [Du öffnest Gitpod](https://gitpod.io/new)
 - [ ] Klicke `Continue with GitHub` und melde Dich mit Deinen GitHub-Zugangsdaten an.
 - [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
 - [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
