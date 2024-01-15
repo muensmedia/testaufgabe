@@ -14,7 +14,7 @@ class CopyrightController extends Controller
   :_;  :_;`.__.'       :_;`.__,_;`.__.'       :_;`.__.'`.__.'
         ";
 
-    // Generated with http://www.network-science.de/ascii/
+    // Generated with  https://patorjk.com/software/taag/
     const COPYRIGHT = "
  ___       _   _  _ _  ___  _  _  __  _   _  ___  __  _   _     __          _ _
 | o )__   | \_/ || | || __|| \| |/ _|| \_/ || __||  \| | / \   / _|  _ _ ||| U |
