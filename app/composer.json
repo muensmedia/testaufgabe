@@ -17,7 +17,7 @@
         "laravel/sail": "^v1.28",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^v7.10",
-        "phpunit/phpunit": "^11",
+        "phpunit/phpunit": "^10",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -25,7 +25,6 @@
             "App\\": "app/App/",
             "Components\\": "app/Components/",
             "Support\\": "app/Support/",
-            "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
     },
