@@ -32,9 +32,10 @@ class Handler extends ExceptionHandler
      *
      * @return void
      */
-    public function register()
+    #[\Override]
+    public function register(): void
     {
-        $this->renderable(function (Throwable $e, $request) {
+        $this->renderable(function (Throwable $e) {
             return response("{$e->getMessage()}\n\n{$e->getTraceAsString()}")->setStatusCode( 500 );
         });
     }

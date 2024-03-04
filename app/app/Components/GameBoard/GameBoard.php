@@ -12,10 +12,10 @@ use Throwable;
 class GameBoard
 {
     // Board size
-    const TTT_SIZE = 3;
+    public const TTT_SIZE = 3;
 
     // File name for serialization
-    const TTT_GAME = 'tic-tac-toe';
+    public const TTT_GAME = 'tic-tac-toe';
 
     // Board data storage
     private array $board;
@@ -63,7 +63,7 @@ class GameBoard
      * @return void
      * @throws Exception
      */
-    public function setSpace(int $x, int $y, GameMark $mark)
+    public function setSpace(int $x, int $y, GameMark $mark): void
     {
         $this->validatePosition($x,$y);
         $this->last_player = $mark->player();
@@ -160,7 +160,7 @@ class GameBoard
                     throw new Exception('Unable to unserialize.');
 
             }
-            catch (Throwable $e)
+            catch (Throwable)
             {
                 // In case deserialization goes wrong, reset data to null
                 $data = null;
