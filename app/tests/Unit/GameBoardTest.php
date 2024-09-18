@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class GameBoardTest extends TestCase
 {
-    public function test_new_gameboard_should_be_empty()
+    public function test_new_gameboard_should_be_empty(): void
     {
         $gb = GameBoard::load();
 
@@ -17,7 +17,7 @@ class GameBoardTest extends TestCase
                 $this->assertTrue( $gb->getSpace($x,$y)->free() );
     }
 
-    public function test_gameboard_should_fill()
+    public function test_gameboard_should_fill(): void
     {
         $gb = GameBoard::load();
 
@@ -38,7 +38,7 @@ class GameBoardTest extends TestCase
                 }, $gb->getSpace( $x, $y ) );
     }
 
-    public function test_gameboard_slices()
+    public function test_gameboard_slices(): void
     {
         $gb = GameBoard::load();
 

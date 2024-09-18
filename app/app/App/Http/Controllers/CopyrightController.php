@@ -6,7 +6,7 @@ use Illuminate\Http\Response;
 
 class CopyrightController extends Controller
 {
-    const HEADER = "
+    public const HEADER = "
 .-----. _            .-----.                .-----.
 `-. .-':_;           `-. .-'                `-. .-'
   : :  .-. .--.  _____ : : .--.   .--.  _____ : : .--.  .--.
@@ -15,7 +15,7 @@ class CopyrightController extends Controller
         ";
 
     // Generated with  https://patorjk.com/software/taag/
-    const COPYRIGHT = "
+    public const COPYRIGHT = "
  ___       _   _  _ _  ___  _  _  __  _   _  ___  __  _   _     __          _ _
 | o )__   | \_/ || | || __|| \| |/ _|| \_/ || __||  \| | / \   / _|  _ _ ||| U |
 | o \\ V7 | \_/ || U || _| | \\ |\_ \| \_/ || _| | o ) || o | ( |_n|/ \ \|o\   |

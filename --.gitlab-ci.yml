@@ -1,0 +1,49 @@
+stages:
+  - test
+
+include:
+  - project: 'muensmedia-docker/gitlab-ci-recipes'
+    file:
+      - '/package_manager/.composer.yml'
+
+composer install dev:
+  stage: test
+  extends:
+    - .composer-install
+  variables:
+    PHP_VERSION: '8.3'
+    FOLDER_TO_RUN_COMPOSER: './app/'
+    COMPOSER_FOLDER: './app/vendor/'
+    COMPOSER_PARAMETERS: '--optimize-autoloader --no-interaction'
+  artifacts:
+    paths:
+      - ${COMPOSER_FOLDER}
+    expire_in: 14 days
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-dev
+    paths:
+      - ${COMPOSER_FOLDER}
+
+php tests:
+  extends:
+    - composer install dev
+  needs:
+    - composer install dev
+  dependencies:
+    - composer install dev
+  variables:
+    APP_ENV: 'testing'
+  script:
+    - cd laravel/
+    # seed the database
+    - php artisan migrate:fresh
+    # run tests
+    - php artisan test --compact --profile
+  artifacts:
+    when: always
+    paths:
+      - laravel/junit.xml
+    reports:
+      junit: laravel/junit.xml
+  cache:
+    policy: pull

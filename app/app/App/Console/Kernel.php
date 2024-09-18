@@ -2,7 +2,6 @@
 
 namespace App\Console;
 
-use Components\Users\Jobs\InvalidateAccessTokensJob;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 use function base_path;
@@ -15,10 +14,10 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
+    #[\Override]
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-        $schedule->call(new InvalidateAccessTokensJob)->hourly();
     }
 
     /**
@@ -26,6 +25,7 @@ class Kernel extends ConsoleKernel
      *
      * @return void
      */
+    #[\Override]
     protected function commands()
     {
         $this->load(__DIR__.'/Commands');

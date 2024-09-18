@@ -8,29 +8,13 @@ use Exception;
 
 class GameBoardSlice
 {
-    // Slice type
-    private GameBoardSliceType $type;
-
-    // Main GameBoard instance
-    private GameBoard $board;
-
-    // Board size
-    private int $size;
-
-    // Offset position (only needed for ROW and COL)
-    private int $other;
-
     /**
      * @throws Exception
      */
-    public function __construct(GameBoard $board, GameBoardSliceType $type, int $size, int $other = 0)
+    public function __construct(private readonly GameBoard $board, private readonly GameBoardSliceType $type, private readonly int $size, private readonly int $other = 0)
     {
-        $this->board = $board;
-        $this->type  = $type;
-        $this->size  = $size;
-        $this->other = $other;
-        if ($size <= 0) throw new Exception("Board slice size must be at least 1.");
-        if ($other < 0 || $other >= $size)
+        if ($this->size <= 0) throw new Exception("Board slice size must be at least 1.");
+        if ($this->other < 0 || $this->other >= $this->size)
             throw new Exception("Board slice offset invalid.");
     }
 

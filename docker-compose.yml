@@ -33,7 +33,7 @@ services:
 #      - maridb-vol:/var/lib/mysql # I want to manage volumes manually.
 
   php:
-    image: wodby/php:8.1
+    image: wodby/php:8.3
     container_name: "${PROJECT_NAME}_php"
     environment:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
