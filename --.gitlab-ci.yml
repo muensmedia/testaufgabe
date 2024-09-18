@@ -12,8 +12,8 @@ composer install dev:
     - .composer-install
   variables:
     PHP_VERSION: '8.3'
-    FOLDER_TO_RUN_COMPOSER: './laravel/'
-    COMPOSER_FOLDER: './laravel/vendor/'
+    FOLDER_TO_RUN_COMPOSER: './app/'
+    COMPOSER_FOLDER: './app/vendor/'
     COMPOSER_PARAMETERS: '--optimize-autoloader --no-interaction'
   artifacts:
     paths:
