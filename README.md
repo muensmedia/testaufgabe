@@ -19,25 +19,34 @@ When no winner has been decided after all 9 spaces have been filled, the game en
 
 # Your Tasks
 
-## 1.) Vervollständige das Struktorgramm
-Ein Nassi-Shneiderman-Diagramm oder auch **Struktogramm** ist ein Diagrammtyp zur Darstellung von Programmentwürfen im Rahmen der Methode der strukturierten Programmierung.  
-Ein Struktogramm besteht immer aus den nachfolgenden Strukturblöcken, die ineinander geschachtelt oder miteinander kombiniert werden können:
-### Anweisung
-![](https://upload.wikimedia.org/wikipedia/commons/1/1e/LineareAnw.png)  
-Jede Anweisung (Befehlsfolge), die das Programm abarbeiten soll, wird in einen rechteckigen Strukturblock geschrieben.
-### Fallunterscheidung
-![](https://upload.wikimedia.org/wikipedia/commons/7/73/ZweifAusw.png)  
-Wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen.
-Trifft die Bedingung nicht zu (falsch), wird der Anweisungsblock 2 durchlaufen (if then else). Ein Anweisungsblock kann aus einer oder mehreren Anweisungen bestehen.
-### Schleife mit Ausgangsbedingung
-![](https://upload.wikimedia.org/wikipedia/commons/d/da/FussgesteuerteSchleife.png)  
-Die Bedingung, ob Anwendungsblock 1 erneut wiederholt werden soll, wird erst nach dem Durchlauf (dem Ausführen von Anwendungsblock 1) geprüft. Daraus ergibt sich, dass Anwendungsblock 1 mindestens einmal durchlaufen werden muss.
+## 1.) Complete this Struktogramm
 
-### Struktogramm Tic-Tac-Toe vervollständigen
-Wir haben begonnen ein Struktogramm für das Spiel Tic-Tac-Toe zu erstellen.  
-An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftiger Ausbilder Malte nicht sicher. **Kannst Du ihm helfen?**
+A Nassi-Shneiderman-Diagram or **Struktogramm** is a Diagram to show Program drafts as a Method for structural Programing.
 
-*Bitte notiere Deine Lösungen und füge diese bei Fertigstellung in Deine E-Mail an uns ein.*
+A Struktogramm contains the following structural blocks, that are nested inside or combined with each other:
+
+### Instruction
+![](https://upload.wikimedia.org/wikipedia/commons/1/1e/LineareAnw.png)
+
+Every Instruction (or Chain of Commands), a Program should do, are written inside a rectangle Block.
+
+### If-Case
+![](https://upload.wikimedia.org/wikipedia/commons/7/73/ZweifAusw.png)
+
+If the Condition is met (true), Instruction 1 will run.
+
+If the Condition isn't met (false), Instruction 2 will run. Instruction Blocks can also have multiple Instructions.
+
+### Loop with exit condition (While-Loop)
+![](https://upload.wikimedia.org/wikipedia/commons/d/da/FussgesteuerteSchleife.png)
+
+It needs at least one loop, because the Repeat condition is checked **after** one loop. If this is true, the loop continues.
+
+### complete Struktogram for Tic-Tac-Toe Game
+
+We started creating a Struktogram for the Tic-Tac-Toe Game, but your future trainer Malte isn't sure about the contents from the parts `(1), (2), (3), (4), (5), (6), (7)`.
+
+*Solve this Task and put your Solution into your E-Mail, that you will send us.*
 
 ![tic-tac-toe-struktogramm](./docs/tic-tac-toe-struktogramm.jpg)
 
