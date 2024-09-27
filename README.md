@@ -1,22 +1,23 @@
-# Testaufgabe Ausbildung Fachinformtiker*in Anwendungsentwicklung
-Diese Testaufgabe gilt es zu lösen, wenn Du einen Ausbildungsplatz bei der [MÜNSMEDIA GmbH](https://muensmedia.de) als Fachinformatiker*in Anwendungentwicklung ergattern willst. 👾 🤖 😎
-  
+# Apprenticeship Challenge for future Computer Science Expert Subject Area: Software Development
+This Challenge needs to be solved, if you want to snatch yourself an apprenticeship at [MÜNSMEDIA GmbH](https://muensmedia.de) as an Computer Science Expert Subject Area: Software Development. 👾 🤖 😎
+
 ## Tic-Tac-Toe
-[Tic-Tac-Toe](https://de.wikipedia.org/wiki/Tic-Tac-Toe) oder Drei gewinnt, ist ein einfaches Zweipersonen-Strategiespiel, das Du bestimmt schon selber gespielt hast.
+[Tic-Tac-Toe](https://de.wikipedia.org/wiki/Tic-Tac-Toe), noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, that you're probably already familiar with.
 
-## Spielablauf
-Das Spielfeld besteht aus neun Feldern, die quadratisch (3 x 3) angeordnet sind.  
-Die Spieler markieren abwechselnd eines der noch freien Felder mit einem Kreuz (:x:) bzw. Kringel (:o:).
+## Gameplay / How it works
+The game board consists of 9 empty spaces, aligned in a three-by-three grid.
+Players alternately place the marks (:x:) and (:o:) in one of the empty spaces.
 
-Gewonnen hat, wer drei :x: bzw. :o: in einer Zeile, Spalte oder Diagonale – auch Mühle genannt – gekennzeichnet hat. Sind alle Felder belegt und keiner der Spieler hat gewonnen, so endet das Spiel unentschieden.
+The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+When no winner has been decided after all 9 spaces have been filled, the game ends in a draw.
 
-### Beispiel: X hat gewonnen
+### Example: Player X has won
 ![X hat gewonnen](https://wikimedia.org/api/rest_v1/media/math/render/svg/595038905e2e65568a90ec43d36a9c2a537c1d0a)
 
-### Beispiel: Unentschieden
+### Exapmle: Draw
 ![Unentschieden](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ba8a4fc55e4259c807ef326b28088e6e46d5e42)
 
-# Deine Aufgaben
+# Your Tasks
 
 ## 1.) Vervollständige das Struktorgramm
 Ein Nassi-Shneiderman-Diagramm oder auch **Struktogramm** ist ein Diagrammtyp zur Darstellung von Programmentwürfen im Rahmen der Methode der strukturierten Programmierung.  
@@ -40,14 +41,14 @@ An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftige
 
 ![tic-tac-toe-struktogramm](./docs/tic-tac-toe-struktogramm.jpg)
 
-## 2.) Programmierung vorbereiten
-Nachdem Du jetzt weißt, wie Tic-Tac-Toe funktioniert, wollen wir zusammen programmieren.  
-Keine Sorge, wenn Du bislang nur wenig oder gar nicht programmiert hast, wir steigern uns langsam 😉  
-Wir wollen Deinen Quellcode sehen können und mit Dir an Deinem Quellcode arbeiten können, daher verwenden wir um den Quellcode kostenfrei auszutauschen, die Plattform GitHub.
+## 2.) Getting ready to code
+Now that you know how Tic-Tac-Toe works, we want to code it.
+Dont worry. No matter if you dont have eny programming experience or just a bit, we will get there together 😉
+We want to see and work together on Your sourcecode. To freely share sourcecode, we are using the platform GitHub.
 
-### Bitte erledige die folgenden Schritte
-- [ ] Du [verfügst bereits über einen GitHub-Account](https://github.com/login) **oder** [Du erstellst Dir einen kostenfreien GitHub-Account](https://github.com/join).
-- [ ] Nachdem Du Dich bei Github.com angemeldet hast:
+### Please do the following steps
+- [ ] You [already own a Github-Account](https://github.com/login)  **or** you [create yourself a free GitHub-Account](https://github.com/join)
+- [ ] After signing in at GitHub.com:
 - [ ] Kopiere unseren Quellcode in Deinen GitHub-Account. Dazu musst Du nur den [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
   - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
 - [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
