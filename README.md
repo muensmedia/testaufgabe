@@ -126,9 +126,9 @@ Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
-## 5.) Der 🤖 spielt - /play-bot
-Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
-Öffne dazu Swagger und verwende im Wechsel (Du beginnst) die `/play`-API-Route und die `/play-bot`-API-Route.
+## 5.) 🤖 Turn - /play-bot
+We already write a 🤖 (Bot) for you, so you can play against him.  
+Open Swagger and alternate between the `/play` and `/play-bot`-API-Route (First Turn is yours).
 
 ## 6.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
 Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr nicht an der Reihe seid.  
@@ -141,19 +141,19 @@ So macht das natürlich keinen Spaß 😞!
 - [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
-## 7.) Wer hat gewonnen? 🏆
-Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
-Es ist an Dir das zu ändern.
+## 7.) Who's the Winner? 🏆 
+Currently, the game is unable to display a winner.  
+Now it's your task, to do this.
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile 104 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Currently, the Method `whoHasWon()` in [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) at Line 104 has no Game logic.
+  - Add the missing logic. We created some Hint's, to how you can achieve this, as Comments in the Code.
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a Commit (see above `Create Commit`)
+- [ ] 🔁 Click on `Sync changes`, to upload your changes to GitHub.
 
-## Zusatzaufgaben
-Dir hat das alles großen Spaß gemacht und Du willst noch mehr, kein Problem 😈!
+## Additional tasks
+You had fun by solving this tiny tasks above and you want more? **Ok, no Problem 😈!**
 
 ### 8.) Methode someoneHasWon() verschönern ✨
 Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
@@ -169,15 +169,15 @@ Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` ans
 - [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
 
 ### 9.) 4x4 Tic-Tac-Toe 😈
-Überlege Dir, was Du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
-Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php) genauer an.
+Think about, what you need to change, so we can play a 4x4 Tic-Tac-Toe.
+Look also closer at the class [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php).
 
 **To-do:**
-- [ ] Versuche ein 4x4 Tic-Tac-Toe lauffähig zu bekommen
-  - Insbesondere Zusatzaufgabe 7.) wird dazu notwendig sein.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Try to make a 4x4 Tic-Tac-Toe
+  - You will need your changes from Task 7.)
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a Commit (see above `Create Commit`)
+- [ ] 🔁 Click on `Sync changes`, to upload your changes to GitHub.
 
 # ➡ Wie geht es weiter?
 Sende uns die Lösung zu Aufgabe 1 sowie den Link zu Deinem Github-Repository per E-Mail, sobald Du fertig bist.  
