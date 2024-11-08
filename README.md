@@ -25,28 +25,28 @@ A Nassi-Shneiderman-Diagram or **Struktogramm** is a Diagram to show Program dra
 
 A Struktogramm contains the following structural blocks, that are nested inside or combined with each other:
 
-### Instruction
-![](https://upload.wikimedia.org/wikipedia/commons/1/1e/LineareAnw.png)
+### Process
+![](https://upload.wikimedia.org/wikipedia/commons/a/a2/Process_Block2.jpg)
 
-Every Instruction (or Chain of Commands), a Program should do, are written inside a rectangle Block.
+Every Process (or Chain of Commands), a Program should do, are written inside a rectangle Block.
 
 ### If-Case
-![](https://upload.wikimedia.org/wikipedia/commons/7/73/ZweifAusw.png)
+![](https://upload.wikimedia.org/wikipedia/commons/7/79/Two-Way_Branch.jpg)
 
 If the Condition is met (true), Instruction 1 will run.
 
 If the Condition isn't met (false), Instruction 2 will run. Instruction Blocks can also have multiple Instructions.
 
 ### Loop with exit condition (While-Loop)
-![](https://upload.wikimedia.org/wikipedia/commons/d/da/FussgesteuerteSchleife.png)
+![](https://upload.wikimedia.org/wikipedia/commons/b/be/Test_Last.jpg)
 
 It needs at least one loop, because the Repeat condition is checked **after** one loop. If this is true, the loop continues.
 
-### complete Struktogram for Tic-Tac-Toe Game
+### Complete Struktogram for Tic-Tac-Toe Game
 
 We started creating a Struktogram for the Tic-Tac-Toe Game, but your future trainer Malte isn't sure about the contents from the parts `(1), (2), (3), (4), (5), (6), (7)`.
 
-*Solve this Task and put your Solution into your E-Mail, that you will send us.*
+*Solve this Task and put your Solution into your E-Mail, that you will send to us.*
 
 ![tic-tac-toe-struktogramm](./docs/tic-tac-toe-struktogramm.jpg)
 
@@ -77,35 +77,35 @@ We want to see and work together on Your sourcecode. To freely share sourcecode,
 - [ ] Öffne dort nun diese Anleitung. Klicke dazu mit einem Rechtsklick auf die Datei `REDAME.md` und dann auf `Open Preview`.
 - [ ] Fahre mit der Anleitung in Deiner Gitpod-Programmierumgebung fort.
 
-## 3.) Copyright anpassen
-Deine Tic-Tac-Toe Webanwendung besteht aus einem Frontend und einem Backend.  
-Als Frontend verwenden wir das Tool `Swagger` mit dem man Schnittstellen mit einer grafischen Oberfläche einfach ausprobieren kann.  
-Swagger haben wir Dir bereits im Browserfenster geöffnet.  
-Als Backend verwenden wir eine [PHP-Anwendung](https://www.php.net/manual/en/) auf Basis des Frameworks [Laravel](https://laravel.com/docs/9.x).  
+## 3.) Change Copyright
+Your Tic-Tac-Toe Webapp consists of a Frontend and Backend Part.  
+As Frontend, we use a Tool called `Swagger`, so we can try out API's with a graphical Interface.
+Swagger is already open, as you open GitPod's Web-IDE.
+As Backend, we use a [PHP-App](https://www.php.net/manual/en/), based on the Framework [Laravel](https://laravel.com/docs/9.x).  
 
-Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️ 
+We have prepared a function, that displays this Game's Copyright. ©️
 
-**Bitte probiere die API-Methode zur Anzeige des Copyrights in Swagger aus:**
-- [ ] Klicke in Swagger dazu auf `/copyright`.
-- [ ] Klicke auf den Button `Try it out`.
-- [ ] Sende die Anfrage indem Du auf `Execute` drückst.
-- Du siehst im Abschnitt `Response body` die Antwort mit dem aktuellen Copyright.
+**Try this API-Method for display the Game's Copyright:**
+- [ ] In Swagger, click on `/copyright`.
+- [ ] Click on the Button `Try it out`.
+- [ ] Send this Request by clicking on `Execute`.
+- You can see the answer with the current Copyright at `Response body`.
 
-✍🏼 **Verändere das Copyright:**  
-- [ ] Öffne die Datei [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
-- [ ] In Zeile `18` wird das Copyright als String gespeichert.
-- [ ] Benutze den in der `CopyrightController.php` verlinkten ASCII Generator um Dein persönliches Copyright zu erstellen.
-- [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch Dein eigenes Copyright.
-- [ ] Probier Dein neues Copyright mit Swagger aus!
-- [ ] Du musst Deine Änderung nun noch speichern - **committen** genannt (siehe nächster Abschnitt).
+✍🏼 **Change Copyright:**  
+- [ ] Open File [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
+- [ ] At Line `18` the Copyright is saved as a string.
+- [ ] Use the ASCII Generator linked in `CopyrightController.php` to create your personal Copyright.
+- [ ] Replace our Copyright `By MÜNSMEDIA GmbH` by your own Copyright.
+- [ ] Try your new Copyright with Swagger!
+- [ ] You need to save your changes, also named - **commit** (next section).
 
-#### ✅ Commit erstellen:
-  - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücke die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
-  - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
-  - Speichere die Nachricht mit <kbd>Strg</kbd><kbd>⏎</kbd>
-  - Klicke nun im Dialog auf `Yes`, um alle Deine Änderungen zum Commit hinzuzufügen.
-  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must Du ebenfalls mit `OK` bestätigen.
-  - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
+#### ✅ Create Commit:
+  - On the left Side, click on Tab `Source Control` or you can press the keys <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> together.
+  - Above, you can type a message, to describe your changes as detailed and meaningful as possible. **Please write your message in English, even if you are a native german speaker**.
+  - Save your message with <kbd>Strg</kbd><kbd>⏎</kbd>
+  - At the next Dialog, click on `Yes`, to add all your changes to your Commit.
+  - **Click on the Button `Sync changes`**, to upload your changes to GitHub. Confirm with `OK`.
+  - 🎉 You have done your first Git-Commit! 🎊
 
 ## 4.) Methode /play schreiben
 Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.  
