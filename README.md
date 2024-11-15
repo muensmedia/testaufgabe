@@ -58,7 +58,7 @@ We want to see and work together on Your sourcecode. To freely share sourcecode,
 ### Please do the following steps
 - [ ] You [already own a Github-Account](https://github.com/login)  **or** you [create yourself a free GitHub-Account](https://github.com/join)
 - [ ] After signing in at GitHub.com:
-- [ ] Kopiere unseren Quellcode in Deinen GitHub-Account. Dazu musst Du nur den [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
+- [ ] Copy our sourcecode to your GitHub-Account. Just [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
   - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
 - [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
 - [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
@@ -107,24 +107,24 @@ We have prepared a function, that displays this Game's Copyright. ©️
   - **Click on the Button `Sync changes`**, to upload your changes to GitHub. Confirm with `OK`.
   - 🎉 You have done your first Git-Commit! 🎊
 
-## 4.) Methode /play schreiben
-Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.  
-Es fehlt noch die Logik, was bei einem Aufruf der `/play`-API-Route passieren soll.
+## 4.) writing the /play method
+You can't play against the bot programmed by the MÜNSMEDIA team yet.
+It is still missing die logic that should happen when the `/play`-API-Route gets called.
 
-### Struktogramm für einen Spielzug
-Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
+### Structogram for a turn
+Here is the structogram for one of your turns with the `play()` method.
 
 ![](./docs/struktogramm-spielzug.jpg)
 
 **To-do:**
-- [ ] Schau Dir in Ruhe das Struktogramm für einen Spielzug von Dir an!
-  - Die von Dir noch zu implementierenden Teile des Spielzugs haben wir im Struktogramm farblich hervorgehoben.
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile 144 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
-- [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `DELETE /board`**
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Take your time to look at the structogram for one of your turns!
+  - We have highlighted the parts that you still need to implement in the structogram.
+- [ ] In file [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) the `play()` methode on line 144 still needs some logic.
+  - Please complete the missing logic. We left some comments in the source code to help you get started.
+- [ ] Now test it in Swagger. The function there is also called `/play`.
+- [ ] **❌ To reset the scoreboard, you can use the `DELETE /board` methode in Swagger**
+- [ ] ✅ Create a Commit (see above `create Commit`)
+- [ ] 🔁 Click the button `Sync changes` to upload your changes to GitHub.
 
 ## 5.) 🤖 Turn - /play-bot
 We already write a 🤖 (Bot) for you, so you can play against him.  
