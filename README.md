@@ -59,23 +59,23 @@ We want to see and work together on Your sourcecode. To freely share sourcecode,
 - [ ] You [already own a Github-Account](https://github.com/login)  **or** you [create yourself a free GitHub-Account](https://github.com/join)
 - [ ] After signing in at GitHub.com:
 - [ ] Copy our sourcecode to your GitHub-Account. Just [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
-  - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
-- [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
-- [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
-- [ ] [Du öffnest Gitpod](https://gitpod.io/workspaces)
-- [ ] Klicke `Continue with GitHub`, wähle `Authorize gitpod-io` und melde Dich mit Deinen GitHub-Zugangsdaten an.
-- [ ] Stelle sicher, dass Du nun auf der Seite https://gitpod.io/workspaces bist.
-- [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
-- [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
-- Die Arbeitsumgebung GitPod öffnet sich.
-- [ ] **Wähle `Dont wait for prebuild`**
-- Gitpod öffnet sich, *das kann bis zu 5 Minuten dauern 😳. Gedulde Dich.*
-- [ ] Öffne **in der Zwischenzeit** https://gitpod.io/integrations
-- [ ] Klicke in der Zeile `GitHub github.com` hinten auf die `drei Punkte` und dann auf `Edit Permissions`
-- [ ] Wähle dann zusätzlich `public_repo` und `repo` aus und speichere mit mit `Update permissions`
-- [ ] Bestätige die Änderung mit `Authorize gitpod-io` und ggf. Deinem Passwort
-- [ ] Öffne dort nun diese Anleitung. Klicke dazu mit einem Rechtsklick auf die Datei `REDAME.md` und dann auf `Open Preview`.
-- [ ] Fahre mit der Anleitung in Deiner Gitpod-Programmierumgebung fort.
+  - **Please set the visibility of the new repository - as default - to 'Public'.**
+- [ ] Now scroll down the newly created GitHub repository until you see these instructions.
+- [ ] You continue from this point in the repository you have just created.
+- [ ] [Open Gitpod](https://gitpod.io/workspaces)
+- [ ] Click `Continue with GitHub`, choose `Authorize gitpod-io` and login with your GitHub-credentials.
+- [ ] Make sure you are on https://gitpod.io/workspaces.
+- [ ] By clicking `New Workspace` you create a new programming environment.
+- [ ] In the opening dialog, select the address of your newly created repository.
+- The GitPod Workspace should open itself.
+- [ ] **Choose `Don't wait for prebuild`**
+- Gitpod opens, *this can take some minutes 😳. Please be patient.*
+- [ ] Open **in the meantime** https://gitpod.io/integrations
+- [ ] In the row `GitHub github.com` click the `three dots` followed by `Edit Permissions`
+- [ ] Additionally select `public_repo` and `repo` and save with `Update permissions`.
+- [ ] Confirm your changes with `Authorize gitpod-io` and your password if applicable
+- [ ] Now open these instructions there. To do this, right-click on the file `REDAME.md` and then on `Open Preview`.
+- [ ] Continue with the instructions in your Gitpod programming environment.
 
 ## 3.) Change Copyright
 Your Tic-Tac-Toe Webapp consists of a Frontend and Backend Part.  
