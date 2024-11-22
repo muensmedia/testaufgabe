@@ -130,16 +130,16 @@ Here is the structogram for one of your turns with the `play()` method.
 We already write a 🤖 (Bot) for you, so you can play against him.  
 Open Swagger and alternate between the `/play` and `/play-bot`-API-Route (First Turn is yours).
 
-## 6.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
-Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr nicht an der Reihe seid.  
-So macht das natürlich keinen Spaß 😞! 
+## 6.) NO CHEATING! - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+Currently, you or the bot can play multiple turns in a row, although you are supposed to take turns.
+Of course, it's no fun like that 😞!
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `isAllowedToPlay()` - Zeile 121 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] In file [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) the `isAllowedToPlay()` methode on line 144 still needs some logic.
+  - Please complete the missing logic. We left some comments in the source code to help you get started.
+- [ ] thoroughly test your changes in Swagger.
+- [ ] ✅ Create a Commit (see above `create Commit`)
+- [ ] 🔁 Click the button `Sync changes` to upload your changes to GitHub.
 
 ## 7.) Who's the Winner? 🏆 
 Currently, the game is unable to display a winner.  
