@@ -155,18 +155,18 @@ Now it's your task, to do this.
 ## Additional tasks
 You had fun by solving this tiny tasks above and you want more? **Ok, no Problem 😈!**
 
-### 8.) Methode someoneHasWon() verschönern ✨
-Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
-Kannst Du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
-Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` anschaust:
+### 8.) Make Method someoneHasWon() prettier ✨
+The Method `someoneHasWon()` at [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) is currently ugly.  
+Can you simplify this, by using some loops?  
+It can be useful, to look at **public-methods** from `$game`:
 [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php)
 
 
 **To-do:**
-- [ ] Verschönere die Methode `someoneHasWon()`
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Make Method `someoneHasWon()` prettier
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a Commit (see above `Create Commit`)
+- [ ] 🔁 Click on `Sync changes`, to upload your changes to GitHub.
 
 ### 9.) 4x4 Tic-Tac-Toe 😈
 Think about, what you need to change, so we can play a 4x4 Tic-Tac-Toe.
@@ -179,8 +179,7 @@ Look also closer at the class [app/app/Components/GameBoard/GameBoard.php](app/a
 - [ ] ✅ Create a Commit (see above `Create Commit`)
 - [ ] 🔁 Click on `Sync changes`, to upload your changes to GitHub.
 
-# ➡ Wie geht es weiter?
-Sende uns die Lösung zu Aufgabe 1 sowie den Link zu Deinem Github-Repository per E-Mail, sobald Du fertig bist.  
-Wir werden Deine Lösung auswerten und Dich zu einem persönlichen Kennenlerngespräch einladen, sofern Du unter die besten 5 Bewerber*innen kommst.
-
-Wir freuen uns auf Dich!
+# ➡ And what's next?
+Once you are done, sent your Solution for Task 1 and your GitHub-Repository Link via E-Mail back to us.  
+We analyse your Solution and if you are one of the 5 best applicants, we will invite you to a personal meeting, so we can get to know us better.  
+See you soon!
