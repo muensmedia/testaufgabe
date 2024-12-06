@@ -1,176 +1,187 @@
-# Testaufgabe Ausbildung Fachinformtiker*in Anwendungsentwicklung
-Diese Testaufgabe gilt es zu lösen, wenn Du einen Ausbildungsplatz bei der [MÜNSMEDIA GmbH](https://muensmedia.de) als Fachinformatiker*in Anwendungentwicklung ergattern willst. 👾 🤖 😎
-  
-## Tic-Tac-Toe
-[Tic-Tac-Toe](https://de.wikipedia.org/wiki/Tic-Tac-Toe) oder Drei gewinnt, ist ein einfaches Zweipersonen-Strategiespiel, das Du bestimmt schon selber gespielt hast.
+# Apprenticeship Challenge for Fachinformatiker*in Anwendungsentwicklung
+You need to successfully solve this challenge, if you want to snatch yourself an apprenticeship at [MÜNSMEDIA GmbH](https://muensmedia.de) as a Fachinformatiker*in Anwendungsentwicklung. 👾 🤖 😎
 
-## Spielablauf
-Das Spielfeld besteht aus neun Feldern, die quadratisch (3 x 3) angeordnet sind.  
-Die Spieler markieren abwechselnd eines der noch freien Felder mit einem Kreuz (:x:) bzw. Kringel (:o:).
+## Tic-tac-toe
+[Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe), noughts and crosses, or Xs and Os is a two-player game, that you're probably already familiar with.
 
-Gewonnen hat, wer drei :x: bzw. :o: in einer Zeile, Spalte oder Diagonale – auch Mühle genannt – gekennzeichnet hat. Sind alle Felder belegt und keiner der Spieler hat gewonnen, so endet das Spiel unentschieden.
+## Gameplay / How it works
+The game board consists of 9 empty spaces, aligned in a three-by-three grid.
+Players alternately place the marks (:x:) and (:o:) in one of the empty spaces.
 
-### Beispiel: X hat gewonnen
-![X hat gewonnen](https://wikimedia.org/api/rest_v1/media/math/render/svg/595038905e2e65568a90ec43d36a9c2a537c1d0a)
+The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+If no winner has been decided after all spaces have been filled, the game ends in a draw.
 
-### Beispiel: Unentschieden
-![Unentschieden](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ba8a4fc55e4259c807ef326b28088e6e46d5e42)
+### Example: Player X has won
+![X won](https://wikimedia.org/api/rest_v1/media/math/render/svg/595038905e2e65568a90ec43d36a9c2a537c1d0a)
 
-# Deine Aufgaben
+### Example: A draw
+![draw](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ba8a4fc55e4259c807ef326b28088e6e46d5e42)
 
-## 1.) Vervollständige das Struktorgramm
-Ein Nassi-Shneiderman-Diagramm oder auch **Struktogramm** ist ein Diagrammtyp zur Darstellung von Programmentwürfen im Rahmen der Methode der strukturierten Programmierung.  
-Ein Struktogramm besteht immer aus den nachfolgenden Strukturblöcken, die ineinander geschachtelt oder miteinander kombiniert werden können:
-### Anweisung
-![](https://upload.wikimedia.org/wikipedia/commons/1/1e/LineareAnw.png)  
-Jede Anweisung (Befehlsfolge), die das Programm abarbeiten soll, wird in einen rechteckigen Strukturblock geschrieben.
-### Fallunterscheidung
-![](https://upload.wikimedia.org/wikipedia/commons/7/73/ZweifAusw.png)  
-Wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen.
-Trifft die Bedingung nicht zu (falsch), wird der Anweisungsblock 2 durchlaufen (if then else). Ein Anweisungsblock kann aus einer oder mehreren Anweisungen bestehen.
-### Schleife mit Ausgangsbedingung
-![](https://upload.wikimedia.org/wikipedia/commons/d/da/FussgesteuerteSchleife.png)  
-Die Bedingung, ob Anwendungsblock 1 erneut wiederholt werden soll, wird erst nach dem Durchlauf (dem Ausführen von Anwendungsblock 1) geprüft. Daraus ergibt sich, dass Anwendungsblock 1 mindestens einmal durchlaufen werden muss.
+# Your tasks
 
-### Struktogramm Tic-Tac-Toe vervollständigen
-Wir haben begonnen ein Struktogramm für das Spiel Tic-Tac-Toe zu erstellen.  
-An einigen Stellen `(1), (2), (3), (4), (5), (6), (7)` war sich dein zukünftiger Ausbilder Malte nicht sicher. **Kannst Du ihm helfen?**
+## 1.) Complete this structogram
 
-*Bitte notiere Deine Lösungen und füge diese bei Fertigstellung in Deine E-Mail an uns ein.*
+A Nassi–Shneiderman diagram or **structogram** is a diagram to show program drafts as a method for structural programming.
 
-![tic-tac-toe-struktogramm](./docs/tic-tac-toe-struktogramm.jpg)
+A structogram contains the following structural blocks, that are nested inside or combined with each other:
 
-## 2.) Programmierung vorbereiten
-Nachdem Du jetzt weißt, wie Tic-Tac-Toe funktioniert, wollen wir zusammen programmieren.  
-Keine Sorge, wenn Du bislang nur wenig oder gar nicht programmiert hast, wir steigern uns langsam 😉  
-Wir wollen Deinen Quellcode sehen können und mit Dir an Deinem Quellcode arbeiten können, daher verwenden wir um den Quellcode kostenfrei auszutauschen, die Plattform GitHub.
+### Process
+![process](https://upload.wikimedia.org/wikipedia/commons/a/a2/Process_Block2.jpg)
 
-### Bitte erledige die folgenden Schritte
-- [ ] Du [verfügst bereits über einen GitHub-Account](https://github.com/login) **oder** [Du erstellst Dir einen kostenfreien GitHub-Account](https://github.com/join).
-- [ ] Nachdem Du Dich bei Github.com angemeldet hast:
-- [ ] Kopiere unseren Quellcode in Deinen GitHub-Account. Dazu musst Du nur den [folgenden Link klicken](https://github.com/muensmedia/testaufgabe/generate).
-  - **Bitte stelle die Sichtbarkeit des neue Repositories - wie voreingestellt - auf `Public`.**
-- [ ] Im neu erstellten GitHub-Repository scrollst Du herunter, bis Du diese Anleitung siehst.
-- [ ] Du machst nun an dieser Stelle aus Deinem soeben erstellten Repository weiter.
-- [ ] [Du öffnest Gitpod](https://gitpod.io/workspaces)
-- [ ] Klicke `Continue with GitHub`, wähle `Authorize gitpod-io` und melde Dich mit Deinen GitHub-Zugangsdaten an.
-- [ ] Stelle sicher, dass Du nun auf der Seite https://gitpod.io/workspaces bist.
-- [ ] Erstelle durch einen Klick auf `New Workspace` eine neue Programmierumgebung.
-- [ ] Wähle im sich öffnenden Dialog die Adresse Deines eben erstellten Repository aus.
-- Die Arbeitsumgebung GitPod öffnet sich.
-- [ ] **Wähle `Dont wait for prebuild`**
-- Gitpod öffnet sich, *das kann bis zu 5 Minuten dauern 😳. Gedulde Dich.*
-- [ ] Öffne **in der Zwischenzeit** https://gitpod.io/integrations
-- [ ] Klicke in der Zeile `GitHub github.com` hinten auf die `drei Punkte` und dann auf `Edit Permissions`
-- [ ] Wähle dann zusätzlich `public_repo` und `repo` aus und speichere mit mit `Update permissions`
-- [ ] Bestätige die Änderung mit `Authorize gitpod-io` und ggf. Deinem Passwort
-- [ ] Öffne dort nun diese Anleitung. Klicke dazu mit einem Rechtsklick auf die Datei `REDAME.md` und dann auf `Open Preview`.
-- [ ] Fahre mit der Anleitung in Deiner Gitpod-Programmierumgebung fort.
+Every process (or chain of commands), a program should do, are written inside a rectangle block.
 
-## 3.) Copyright anpassen
-Deine Tic-Tac-Toe Webanwendung besteht aus einem Frontend und einem Backend.  
-Als Frontend verwenden wir das Tool `Swagger` mit dem man Schnittstellen mit einer grafischen Oberfläche einfach ausprobieren kann.  
-Swagger haben wir Dir bereits im Browserfenster geöffnet.  
-Als Backend verwenden wir eine [PHP-Anwendung](https://www.php.net/manual/en/) auf Basis des Frameworks [Laravel](https://laravel.com/docs/9.x).  
+### Case distinction
+![case](https://upload.wikimedia.org/wikipedia/commons/7/79/Two-Way_Branch.jpg)
 
-Wir haben eine Funktion vorbereitet, die das Copyright des Spiels ausgibt. ©️ 
+If the condition is met (true), instruction 1 will run.
 
-**Bitte probiere die API-Methode zur Anzeige des Copyrights in Swagger aus:**
-- [ ] Klicke in Swagger dazu auf `/copyright`.
-- [ ] Klicke auf den Button `Try it out`.
-- [ ] Sende die Anfrage indem Du auf `Execute` drückst.
-- Du siehst im Abschnitt `Response body` die Antwort mit dem aktuellen Copyright.
+If the condition isn't met (false), instruction 2 will run. Instruction blocks can also have multiple instructions.
 
-✍🏼 **Verändere das Copyright:**  
-- [ ] Öffne die Datei [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
-- [ ] In Zeile `18` wird das Copyright als String gespeichert.
-- [ ] Benutze den in der `CopyrightController.php` verlinkten ASCII Generator um Dein persönliches Copyright zu erstellen.
-- [ ] Ersetze das Copyright `By MÜNSMEDIA GmbH` durch Dein eigenes Copyright.
-- [ ] Probier Dein neues Copyright mit Swagger aus!
-- [ ] Du musst Deine Änderung nun noch speichern - **committen** genannt (siehe nächster Abschnitt).
+### Loop with exit condition (While-Do-Loop)
+![loop](https://upload.wikimedia.org/wikipedia/commons/b/be/Test_Last.jpg)
 
-#### ✅ Commit erstellen:
-  - Klicke dazu in der linken Seitenleiste auf den Reiter `Source Control` oder drücke die Tasten <kbd>Strg</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd> gleichzeitig.
-  - Gib oben eine Textnachricht ein, die Deine Änderung bestmöglich beschreibt. **Bitte schreibe die Nachricht auf Englisch**.
-  - Speichere die Nachricht mit <kbd>Strg</kbd><kbd>⏎</kbd>
-  - Klicke nun im Dialog auf `Yes`, um alle Deine Änderungen zum Commit hinzuzufügen.
-  - **Klicke den Button `Sync changes`** um Deine Änderungen auf GitHub hochzuladen. Hier must Du ebenfalls mit `OK` bestätigen.
-  - 🎉 Du hast Deinen ersten Git-Commit soeben gemacht! 🎊
+After executing the code inside the loop **at least one time** the condition gets checked the first time. If this is true, the loop gets repeated.
 
-## 4.) Methode /play schreiben
-Noch kannst Du nicht gegen den vom MÜNSMEDIA-Team programmierten Bot spielen.  
-Es fehlt noch die Logik, was bei einem Aufruf der `/play`-API-Route passieren soll.
+### Complete the structogram for Tic-tac-toe game
 
-### Struktogramm für einen Spielzug
-Anbei das Struktogramm für einen Spielzug von Dir mit der Methode `play()`.
+We started creating a structogram for the Tic-tac-toe game, but your future trainer Malte isn't sure about the contents from the parts `(1), (2), (3), (4), (5), (6), (7)`.
+**Can you help him?**
 
-![](./docs/struktogramm-spielzug.jpg)
+*Please write down your solutions and include them in your email to us when completed.*
 
-**To-do:**
-- [ ] Schau Dir in Ruhe das Struktogramm für einen Spielzug von Dir an!
-  - Die von Dir noch zu implementierenden Teile des Spielzugs haben wir im Struktogramm farblich hervorgehoben.
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `play()` - Zeile 144 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste Deinen Spielzug in Swagger, die Funktion heißt dort ebenfalls `/play`.
-- [ ] **❌ Um den Spielstand zurückzusetzen, gibt es im Swagger die Methode `DELETE /board`**
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+![tic-tac-toe-structogram](./docs/tic-tac-toe-struktogramm.jpg)
 
-## 5.) Der 🤖 spielt - /play-bot
-Wir haben bereits einen 🤖 (Bot) geschrieben, gegen den Du spielen kannst.  
-Öffne dazu Swagger und verwende im Wechsel (Du beginnst) die `/play`-API-Route und die `/play-bot`-API-Route.
+## 2.) Getting ready to code
+Now that you know how Tic-tac-toe works, we want to code it together.
+Don't worry. Even if you have little to no programming experience, we will get there together. 😉
+We want to see and work together on your source code. We use the platform GitHub to share source code freely.
 
-## 6.) Cheaten verboten - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
-Aktuell kannst Du oder der Bot noch mehrmals hintereinander spielen, obwohl ihr nicht an der Reihe seid.  
-So macht das natürlich keinen Spaß 😞! 
+### Please do the following steps:
+- [ ] You [already own a Github-Account](https://github.com/login)  **or** you [create yourself a free GitHub-Account](https://github.com/join)
+- [ ] After signing in to GitHub.com:
+- [ ] Copy our source code to your GitHub-Account. Just [click here](https://github.com/muensmedia/testaufgabe/generate).
+  - **Please set the visibility of the new repository - as default - to 'Public'.**
+- [ ] Now scroll down the newly created GitHub repository until you see these instructions.
+- [ ] You continue from this point in the repository you have just created.
+- [ ] [Open Gitpod](https://gitpod.io/workspaces)
+- [ ] Click `Continue with GitHub`, choose `Authorize gitpod-io` and login with your GitHub-credentials.
+- [ ] Make sure you are on https://gitpod.io/workspaces.
+- [ ] By clicking `New Workspace` you create a new programming environment.
+- [ ] In the opening dialog, select the address of your newly created repository.
+- The GitPod workspace should open itself.
+- [ ] **Choose `Don't wait for prebuild`**
+- Gitpod opens, *this can take some minutes 😳. Please be patient.*
+- [ ] **In the meantime** open https://gitpod.io/integrations
+- [ ] In the row `GitHub github.com` click the `three dots` followed by `Edit Permissions`
+- [ ] Additionally select `public_repo` and `repo` and save with `Update permissions`.
+- [ ] Confirm your changes with `Authorize gitpod-io` and your password if applicable
+- [ ] Now open these instructions. To do this, right-click on the file `README.md` and then on `Open Preview`.
+- [ ] Continue with the instructions in your Gitpod programming environment.
+
+## 3.) Change copyright
+Your Tic-tac-toe webapp consists of a frontend and backend part.  
+As frontend, we use a tool called `Swagger`, so we can try out API's with a graphical interface.
+Swagger is already open, as you open GitPod's programming environment.
+As backend, we use a [PHP-App](https://www.php.net/manual/en/), based on the framework [Laravel](https://laravel.com/docs/9.x).  
+
+We have prepared a function that displays this game's copyright. ©️
+
+**Try this API method to display the game's copyright:**
+- [ ] In Swagger, click on `/copyright`.
+- [ ] Click on the button `Try it out`.
+- [ ] Send this request by clicking on `Execute`.
+- You can view the output with the current copyright at `Response body`.
+
+✍🏼 **Change copyright:**  
+- [ ] Open file [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
+- [ ] You can find the copyright in a string format on line 18.
+- [ ] Use the ASCII generator linked in `CopyrightController.php` to create your personal copyright.
+- [ ] Replace our copyright `By MÜNSMEDIA GmbH` with your own copyright.
+- [ ] Try your new copyright with Swagger!
+- [ ] You need to save your changes, also named - **commit** (next section).
+
+#### ✅ Create commit:
+  - Click on the Tab `Source Control` on the left or you can press the keys <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> together.
+  - You can type a message above to describe your changes as detailed and meaningful as possible. **Please write your message in English, even if you are a native German speaker**.
+  - Save your message with <kbd>Strg</kbd><kbd>⏎</kbd>
+  - Click on `Yes` in the pop-up window to add all your changes to your commit.
+  - **Click on the button `Sync changes`**, to upload your changes to GitHub. Confirm with `OK`.
+  - 🎉 You have done your first Git-Commit! 🎊
+
+## 4.) Writing the /play method
+You can't play against the bot programmed by the MÜNSMEDIA team yet.
+It is still missing the logic it needs when the `/play` API route is called.
+
+### Structogram for a turn
+Here is the structogram for one of your turns with the `play()` method.
+
+![turn](./docs/struktogramm-spielzug.jpg)
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `isAllowedToPlay()` - Zeile 121 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Take your time to look at the structogram for one of your turns!
+  - We have highlighted the parts that you still need to implement in the structogram.
+- [ ] In file [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) the `play()` method on line 144 still needs some logic.
+  - Please complete the missing logic. We left some comments in the source code to help you get started.
+- [ ] Now test it in Swagger. The function there is also called `/play`.
+- [ ] **❌ To reset the scoreboard, you can use the `DELETE /board` method in Swagger**
+- [ ] ✅ Create a commit (see above `Create commit`)
+- [ ] 🔁 Click the button `Sync changes` to upload your changes to GitHub.
 
-## 7.) Wer hat gewonnen? 🏆
-Aktuell kann das Spiel noch keinen Gewinner ausgeben.  
-Es ist an Dir das zu ändern.
+## 5.) The 🤖 turn - /play-bot
+We have already written a 🤖 (bot) for you, so you can play against him.  
+Open Swagger and alternate between the `/play` and `/play-bot` API route (the first turn is yours).
+
+## 6.) NO CHEATING! - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+Currently, you or the bot can play multiple turns in a row, although you are supposed to take turns.
+Of course, it's no fun like that 😞!
 
 **To-do:**
-- [ ] In der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) in der Methode `whoHasWon()` - Zeile 104 fehlt noch die Logik.
-  - Bitte ergänze die fehlende Logik, wir haben Dir Hilfestellungen in Form von Kommentaren im Quelltext hinterlassen.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] In file [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) the `isAllowedToPlay()` method on line 144 still needs some logic.
+  - Please complete the missing logic. We left some comments in the source code to help you get started.
+- [ ] Thoroughly test your changes in Swagger.
+- [ ] ✅ Create a commit (see above `Create commit`)
+- [ ] 🔁 Click the button `Sync changes` to upload your changes to GitHub.
 
-## Zusatzaufgaben
-Dir hat das alles großen Spaß gemacht und Du willst noch mehr, kein Problem 😈!
+## 7.) Who's the winner? 🏆 
+Currently, the game is unable to display a winner.  
+Now it's your task, to do this.
 
-### 8.) Methode someoneHasWon() verschönern ✨
-Die Method `someoneHasWon()` in der Datei [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) ist ziemlich hässlich.  
-Kannst Du die Methode durch den Einsatz von Schleifen deutlich vereinfachen?  
-Dazu kann es hilfreich sein, wenn Du Dir die **public-Methoden** des `$game` anschaust:
+**To-do:**
+- [ ] Currently, the method `whoHasWon()` in [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) at line 104 has no game logic.
+  - Add the missing logic. We created some hints for you as comments in the code.
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a commit (see above `Create commit`)
+- [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
+
+## Additional tasks
+You had fun by solving these small tasks above and you want more? **Ok, no problem 😈!**
+
+### 8.) Make the method someoneHasWon() prettier ✨
+The method `someoneHasWon()` at [app/app/App/Http/Controllers/GameController.php](app/app/App/Http/Controllers/GameController.php) is currently ugly.  
+Can you simplify this, by using some loops?  
+It can be useful, to look at **public-methods** from `$game`:
 [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php)
 
 
 **To-do:**
-- [ ] Verschönere die Methode `someoneHasWon()`
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Make method `someoneHasWon()` prettier
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a commit (see above `Create commit`)
+- [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
 
-### 9.) 4x4 Tic-Tac-Toe 😈
-Überlege Dir, was Du verändern müsstest, damit wir ein 4x4 Tic-Tac-Toe spielen können.  
-Schau dir dazu auch die Klasse [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php) genauer an.
+### 9.) 4x4 Tic-tac-toe 😈
+Think about, what you need to change, so we can play a 4x4 Tic-tac-toe.
+Also look closer at the class [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php).
 
 **To-do:**
-- [ ] Versuche ein 4x4 Tic-Tac-Toe lauffähig zu bekommen
-  - Insbesondere Zusatzaufgabe 7.) wird dazu notwendig sein.
-- [ ] Teste deine Änderung in Swagger ausführlich
-- [ ] ✅ Erstelle einen Commit (siehe oben `Commit erstellen`)
-- [ ] 🔁 Klicke den Button `Sync changes` um Deine Änderungen auf GitHub hochzuladen.
+- [ ] Try to make a 4x4 Tic-tac-toe
+  - You will need your changes from task 7.)
+- [ ] Test your changes with Swagger as detailed as possible.
+- [ ] ✅ Create a commit (see above `Create commit`)
+- [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
 
-# ➡ Wie geht es weiter?
-Sende uns die Lösung zu Aufgabe 1 sowie den Link zu Deinem Github-Repository per E-Mail, sobald Du fertig bist.  
-Wir werden Deine Lösung auswerten und Dich zu einem persönlichen Kennenlerngespräch einladen, sofern Du unter die besten 5 Bewerber*innen kommst.
+# ➡ And what's next?
+Once you are done, sent your solution for task 1 and your GitHub-Repository link via E-Mail.  
+We will analyse your solution and if you are one of the 5 best applicants, we will invite you to a personal meeting, so we can get to know you better.  
 
-Wir freuen uns auf Dich!
+See you soon!
