@@ -1,23 +1,23 @@
 # Apprenticeship Challenge for Fachinformatiker*in Anwendungsentwicklung
 You need to successfully solve this challenge, if you want to snatch yourself an apprenticeship at [MÜNSMEDIA GmbH](https://muensmedia.de) as a Fachinformatiker*in Anwendungsentwicklung. 👾 🤖 😎
 
-## Tic-Tac-Toe
-[Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe), noughts and crosses, or Xs and Os is a two-player game, that you're probably already familiar with.
+## Tic-tac-toe
+[Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe), noughts and crosses, or Xs and Os is a two-player game, that you're probably already familiar with.
 
 ## Gameplay / How it works
 The game board consists of 9 empty spaces, aligned in a three-by-three grid.
 Players alternately place the marks (:x:) and (:o:) in one of the empty spaces.
 
 The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
-If no winner has been decided after all 9 spaces have been filled, the game ends in a draw.
+If no winner has been decided after all spaces have been filled, the game ends in a draw.
 
 ### Example: Player X has won
 ![X won](https://wikimedia.org/api/rest_v1/media/math/render/svg/595038905e2e65568a90ec43d36a9c2a537c1d0a)
 
-### Example: A tie game
-![tie](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ba8a4fc55e4259c807ef326b28088e6e46d5e42)
+### Example: A draw
+![draw](https://wikimedia.org/api/rest_v1/media/math/render/svg/5ba8a4fc55e4259c807ef326b28088e6e46d5e42)
 
-# Your Tasks
+# Your tasks
 
 ## 1.) Complete this structogram
 
@@ -37,21 +37,22 @@ If the condition is met (true), instruction 1 will run.
 
 If the condition isn't met (false), instruction 2 will run. Instruction blocks can also have multiple instructions.
 
-### Loop with exit condition (While-Loop)
+### Loop with exit condition (While-Do-Loop)
 ![loop](https://upload.wikimedia.org/wikipedia/commons/b/be/Test_Last.jpg)
 
-It needs at least one loop, because the Repeat condition is checked **after** one loop. If this is true, the loop continues.
+After executing the code inside the loop **at least one time** the condition gets checked the first time. If this is true, the loop gets repeated.
 
-### Complete structogram for Tic-Tac-Toe Game
+### Complete the structogram for Tic-tac-toe game
 
-We started creating a structogram for the Tic-Tac-Toe game, but your future trainer Malte isn't sure about the contents from the parts `(1), (2), (3), (4), (5), (6), (7)`.
+We started creating a structogram for the Tic-tac-toe game, but your future trainer Malte isn't sure about the contents from the parts `(1), (2), (3), (4), (5), (6), (7)`.
+**Can you help him?**
 
-*Solve this task and email us your solution.*
+*Please write down your solutions and include them in your email to us when completed.*
 
 ![tic-tac-toe-structogram](./docs/tic-tac-toe-struktogramm.jpg)
 
 ## 2.) Getting ready to code
-Now that you know how Tic-Tac-Toe works, we want to code it together.
+Now that you know how Tic-tac-toe works, we want to code it together.
 Don't worry. Even if you have little to no programming experience, we will get there together. 😉
 We want to see and work together on your source code. We use the platform GitHub to share source code freely.
 
@@ -78,14 +79,14 @@ We want to see and work together on your source code. We use the platform GitHub
 - [ ] Continue with the instructions in your Gitpod programming environment.
 
 ## 3.) Change copyright
-Your Tic-Tac-Toe webapp consists of a frontend and backend part.  
+Your Tic-tac-toe webapp consists of a frontend and backend part.  
 As frontend, we use a tool called `Swagger`, so we can try out API's with a graphical interface.
 Swagger is already open, as you open GitPod's programming environment.
 As backend, we use a [PHP-App](https://www.php.net/manual/en/), based on the framework [Laravel](https://laravel.com/docs/9.x).  
 
 We have prepared a function that displays this game's copyright. ©️
 
-**Try this API method for display the game's copyright:**
+**Try this API method to display the game's copyright:**
 - [ ] In Swagger, click on `/copyright`.
 - [ ] Click on the button `Try it out`.
 - [ ] Send this request by clicking on `Execute`.
@@ -126,8 +127,8 @@ Here is the structogram for one of your turns with the `play()` method.
 - [ ] ✅ Create a commit (see above `Create commit`)
 - [ ] 🔁 Click the button `Sync changes` to upload your changes to GitHub.
 
-## 5.) 🤖 Turn - /play-bot
-We have already written a 🤖 (Bot) for you, so you can play against him.  
+## 5.) The 🤖 turn - /play-bot
+We have already written a 🤖 (bot) for you, so you can play against him.  
 Open Swagger and alternate between the `/play` and `/play-bot` API route (the first turn is yours).
 
 ## 6.) NO CHEATING! - <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
@@ -168,12 +169,12 @@ It can be useful, to look at **public-methods** from `$game`:
 - [ ] ✅ Create a commit (see above `Create commit`)
 - [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
 
-### 9.) 4x4 Tic-Tac-Toe 😈
-Think about, what you need to change, so we can play a 4x4 Tic-Tac-Toe.
+### 9.) 4x4 Tic-tac-toe 😈
+Think about, what you need to change, so we can play a 4x4 Tic-tac-toe.
 Also look closer at the class [app/app/Components/GameBoard/GameBoard.php](app/app/Components/GameBoard/GameBoard.php).
 
 **To-do:**
-- [ ] Try to make a 4x4 Tic-Tac-Toe
+- [ ] Try to make a 4x4 Tic-tac-toe
   - You will need your changes from task 7.)
 - [ ] Test your changes with Swagger as detailed as possible.
 - [ ] ✅ Create a commit (see above `Create commit`)
@@ -182,4 +183,5 @@ Also look closer at the class [app/app/Components/GameBoard/GameBoard.php](app/a
 # ➡ And what's next?
 Once you are done, sent your solution for task 1 and your GitHub-Repository link via E-Mail.  
 We will analyse your solution and if you are one of the 5 best applicants, we will invite you to a personal meeting, so we can get to know you better.  
+
 See you soon!
