@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.7.16">
-    <diagram name="Page-1" id="2NN4rHEjatXXuPw2dO0J">
-        <mxGraphModel dx="1434" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
-                <mxCell id="wtjca8jfE0SegoMRPCTd-1" value="     Set &quot;End game&quot; to  ______ (1)" style="swimlane;align=left;startSize=30;" vertex="1" parent="1">
-                    <mxGeometry x="120" y="100" width="510" height="370" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-2" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Any empty spaces?&lt;br&gt;&lt;br&gt;Yes&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="40" y="30" width="470" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-3" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="wtjca8jfE0SegoMRPCTd-1" source="wtjca8jfE0SegoMRPCTd-2" target="wtjca8jfE0SegoMRPCTd-2">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="240" y="90" as="sourcePoint" />
-                        <mxPoint x="290" y="40" as="targetPoint" />
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="wtjca8jfE0SegoMRPCTd-1" source="wtjca8jfE0SegoMRPCTd-2" target="wtjca8jfE0SegoMRPCTd-2">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="30" y="150" as="sourcePoint" />
-                        <mxPoint x="240.00000000000023" y="90" as="targetPoint" />
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-5" value="Display score:&lt;br&gt;________________ (2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="390" y="90" width="120" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-6" value="Set &quot;End game&quot; to&amp;nbsp; ___________ (3)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="390" y="150" width="120" height="180" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-7" value="Next move (alternately Player &amp;amp; Bot)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="40" y="90" width="350" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-8" value="Any winner?&lt;br&gt;&lt;br&gt;Yes&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="40" y="150" width="350" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="wtjca8jfE0SegoMRPCTd-1" target="wtjca8jfE0SegoMRPCTd-8">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="40.00000000000114" y="150" as="sourcePoint" />
-                        <mxPoint x="392.5" y="210" as="targetPoint" />
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-10" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="wtjca8jfE0SegoMRPCTd-1" source="wtjca8jfE0SegoMRPCTd-8">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="272.5" y="210" as="sourcePoint" />
-                        <mxPoint x="390" y="150" as="targetPoint" />
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-11" value="Set &quot;End game&quot; to&amp;nbsp; &amp;nbsp;___________ (6)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="210" y="210" width="180" height="120" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-12" value="Display score:&lt;br&gt;________________ (4)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="40" y="210" width="170" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-13" value="Set &quot;End game&quot; to ___________ (5)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="40" y="270" width="170" height="60" as="geometry" />
-                </mxCell>
-                <mxCell id="wtjca8jfE0SegoMRPCTd-14" value="Repeat until &quot;End game&quot; is ____________ (7)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="wtjca8jfE0SegoMRPCTd-1">
-                    <mxGeometry x="70" y="335" width="270" height="30" as="geometry" />
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Page-1" id="okuZ-3YnLHZ4_MS1HRbj">
+    <mxGraphModel dx="2885" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-53" value="     Set &quot;End of game reached&quot; to  ______ (1)" style="swimlane;align=left;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="-1440" y="320" width="510" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-54" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Are there any empty spaces on the scoreboard?&lt;br&gt;&lt;br&gt;Yes&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="30" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-55" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="VAQ79YSXoJbNjRX-MTNA-53" source="VAQ79YSXoJbNjRX-MTNA-54" target="VAQ79YSXoJbNjRX-MTNA-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="90" as="sourcePoint" />
+            <mxPoint x="290" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-56" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="VAQ79YSXoJbNjRX-MTNA-53" source="VAQ79YSXoJbNjRX-MTNA-54" target="VAQ79YSXoJbNjRX-MTNA-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="150" as="sourcePoint" />
+            <mxPoint x="240.00000000000023" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-57" value="Return score:&lt;br&gt;________________ (2)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="390" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-58" value="Set &quot;End of game reached&quot; to&amp;nbsp; ___________ (3)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="390" y="150" width="120" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-59" value="Player&#39;s next turn (alternates between player &amp;amp; bot)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="90" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-60" value="Is&amp;nbsp;there a winner?&lt;br&gt;&lt;br&gt;Yes&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="150" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-61" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="VAQ79YSXoJbNjRX-MTNA-53" target="VAQ79YSXoJbNjRX-MTNA-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40.00000000000114" y="150" as="sourcePoint" />
+            <mxPoint x="392.5" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-62" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="VAQ79YSXoJbNjRX-MTNA-53" source="VAQ79YSXoJbNjRX-MTNA-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="272.5" y="210" as="sourcePoint" />
+            <mxPoint x="390" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-63" value="Set &quot;End of game reached&quot; to&amp;nbsp; &amp;nbsp;___________ (6)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="210" y="210" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-64" value="Return score:&lt;br&gt;________________ (4)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="210" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-65" value="Set &quot;End of game reached&quot; to ___________ (5)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="270" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAQ79YSXoJbNjRX-MTNA-66" value="Repeat until &quot;End of game reached&quot; is ____________ (7)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="VAQ79YSXoJbNjRX-MTNA-53">
+          <mxGeometry x="40" y="335" width="330" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
