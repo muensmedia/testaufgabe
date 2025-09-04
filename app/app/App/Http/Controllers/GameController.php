@@ -40,7 +40,7 @@ class GameController extends Controller
      * @throws Exception
      */
     protected function someoneHasWon( GameBoard $game ): bool {
-        // ##### TASK 7 - Make this check more efficient ###############################################################
+        // ##### TASK 8 - Make this check more efficient ###############################################################
         // =============================================================================================================
         // This function checks if the game has already won. It does this by checking for every possible winning
         // condition. For example, the first block below checks if the first row contains identical marks that are not
@@ -102,7 +102,7 @@ class GameController extends Controller
     }
 
     protected function whoHasWon( GameBoard $game ): ?GamePlayer {
-        // ##### TASK 8 - Check who has won ############################################################################
+        // ##### TASK 7 - Check who has won ############################################################################
         // =============================================================================================================
         // Here, you need to code a way to find out who has won the game.
         // This function needs to return null if nobody has won yet - you can use someoneHasWon( $game ) for this.
