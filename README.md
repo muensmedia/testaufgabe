@@ -67,7 +67,7 @@ We want to see and work together on your source code. We use the platform GitHub
 - [ ] Now there is another big bright green button in the center and when you click on it the magic happens.
 
 - The Github workspace should open itself.
-- Gitpod opens, *this can take some minutes 😳. Please be patient. Maybe grab some snacks...*
+- Github Codespace opens, *this can take some minutes 😳. Please be patient. Maybe grab some snacks...*
 - There should be some text in the terminal saying "Running postStartCommand...". Don't worry about it. It will run aslong as the Codespace is active. You know it's done loading as soon as you see a blue circle next to "PORTS" with a number in the center of it.
 - [ ] The instructions should open themself in a nice Preview. If not open the "README.md" file and then look for the window with a magnyfing glass looking symbol in the top right corner.
 - [ ] Continue with the instructions in your Github programming environment.
@@ -90,7 +90,7 @@ We have prepared a function that displays this games' copyright. ©️
 - You can view the output with the current copyright at `Response body`.
 
 ✍🏼 **Change copyright:**  
-- [ ] Open file [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in Gitpod.
+- [ ] Open file [app/app/App/Http/Controllers/CopyrightController.php](app/app/App/Http/Controllers/CopyrightController.php) in your Codespace.
 - [ ] You can find the copyright in a string format on line 18.
 - [ ] Use the ASCII generator linked in `CopyrightController.php` to create your personal copyright.
 - [ ] Replace our copyright `By MÜNSMEDIA GmbH` with your own copyright.
