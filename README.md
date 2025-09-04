@@ -63,28 +63,25 @@ We want to see and work together on your source code. We use the platform GitHub
   - **Please set the visibility of the new repository - as default - to 'Public'.**
 - [ ] Now scroll down the newly created GitHub repository until you see these instructions.
 - [ ] You continue from this point in the repository you have just created.
-- [ ] [Open Gitpod](https://gitpod.io/workspaces)
-- [ ] Click `Continue with GitHub`, choose `Authorize gitpod-io` and login with your GitHub-credentials.
-- [ ] Make sure you are on https://gitpod.io/workspaces.
-- [ ] By clicking `New Workspace` you create a new programming environment.
-- [ ] In the opening dialog, select the address of your newly created repository.
-- The GitPod workspace should open itself.
-- [ ] **Choose `Don't wait for prebuild`**
-- Gitpod opens, *this can take some minutes 😳. Please be patient.*
-- [ ] **In the meantime** open https://gitpod.io/integrations
-- [ ] In the row `GitHub github.com` click the `three dots` followed by `Edit Permissions`
-- [ ] Additionally select `public_repo` and `repo` and save with `Update permissions`.
-- [ ] Confirm your changes with `Authorize gitpod-io` and your password if applicable
-- [ ] Now open these instructions. To do this, right-click on the file `README.md` and then on `Open Preview`.
-- [ ] Continue with the instructions in your Gitpod programming environment.
+- [ ] First you need to press the big bright green button with the content "<> Code". After that click on "Codespaces".
+- [ ] Now there is another big bright green button in the center and when you click on it the magic happens.
+
+- The Github workspace should open itself.
+- Gitpod opens, *this can take some minutes 😳. Please be patient. Maybe grab some snacks...*
+- There should be some text in the terminal saying "Running postStartCommand...". Don't worry about it. It will run aslong as the Codespace is active. You know it's done loading as soon as you see a blue circle next to "PORTS" with a number in the center of it.
+- [ ] The instructions should open themself in a nice Preview. If not open the "README.md" file and then look for the window with a magnyfing glass looking symbol in the top right corner.
+- [ ] Continue with the instructions in your Github programming environment.
 
 ## 3.) Change copyright
 Your Tic-tac-toe webapp consists of a frontend and backend part.  
-As frontend, we use a tool called `Swagger`, so we can try out API's with a graphical interface.
-Swagger is already open, as you open GitPod's programming environment.
+As frontend, we use a tool called `Swagger`, so we can try out APIs with a graphical interface.
+Swagger is already open, as you open Github's programming environment.
+- [ ] To open Swagger click on "PORTS" you will find it in the terminal next to the text "Terminal".
+- [ ] Now you can see an open port called "Laravel (80)" next to the portname there is a link. Hover over it and click the browser icon.
+The page that opens up now is your web interface. Keep it open you will need it!
 As backend, we use a [PHP-App](https://www.php.net/manual/en/), based on the framework [Laravel](https://laravel.com/docs/9.x).  
 
-We have prepared a function that displays this game's copyright. ©️
+We have prepared a function that displays this games' copyright. ©️
 
 **Try this API method to display the game's copyright:**
 - [ ] In Swagger, click on `/copyright`.
@@ -101,7 +98,7 @@ We have prepared a function that displays this game's copyright. ©️
 - [ ] You need to save your changes, also named - **commit** (next section).
 
 #### ✅ Create commit:
-  - Click on the Tab `Source Control` on the left or you can press the keys <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> together.
+  - Click on the Tab `Source Control`. It looks like three points connected with lines on the left or you can press the keys <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> together.
   - You can type a message above to describe your changes as detailed and meaningful as possible. **Please write your message in English, even if you are a native German speaker**.
   - Save your message with <kbd>Strg</kbd><kbd>⏎</kbd>
   - Click on `Yes` in the pop-up window to add all your changes to your commit.
@@ -152,6 +149,11 @@ Now it's your task, to do this.
 - [ ] Test your changes with Swagger as detailed as possible.
 - [ ] ✅ Create a commit (see above `Create commit`)
 - [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
+
+## Close Codespace & Some Tips
+- Close the Codespace when you don't simply by going back to the place you started it but instead of the big button you press on the three dots on the right side of the text "Active" and then click "Delte". MAKE SURE YOU COMMITED YOUR CHANGES BEFOREHAND.
+- If you ever close the the Codespace tab by accident simply open it in the same three dot menu and click on "Open in Browser"
+
 
 ## Additional tasks
 You had fun by solving these small tasks above and you want more? **Ok, no problem 😈!**
