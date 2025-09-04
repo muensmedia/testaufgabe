@@ -1,0 +1,17 @@
+{
+  "build": {
+    "dockerfile": "./Dockerfile",
+    "context": "../app"
+  },
+  "postStartCommand": "cd app && chmod +x ./prepare.sh && ./prepare.sh",
+  "forwardPorts": [
+    80
+  ],
+  "portsAttributes": {
+    "80": {
+      label: "Laravel",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  updateRemoteUserUID: true,
+}
