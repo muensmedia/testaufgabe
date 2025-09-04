@@ -68,20 +68,20 @@ We want to see and work together on your source code. We use the platform GitHub
 
 - The Github workspace should open itself.
 - Github Codespace opens, *this can take some minutes 😳. Please be patient. Maybe grab some snacks...*
-- There should be some text in the terminal saying "Running postStartCommand...". Don't worry about it. It will run aslong as the Codespace is active. You know it's done loading as soon as you see a blue circle next to "PORTS" with a number in the center of it.
-- [ ] The instructions should open themself in a nice Preview. If not open the "README.md" file and then look for the window with a magnyfing glass looking symbol in the top right corner.
+- There should be some text in the terminal saying "Running postStartCommand...". Don't worry about it. It will run as long as the Codespace is active. You know it's done loading as soon as you see a blue circle next to "PORTS" with a number in the center of it.
+- [ ] The instructions should open themself in a nice preview. If not, open the "README.md" file and then look for the window with a magnyfing glass looking symbol in the top right corner.
 - [ ] Continue with the instructions in your Github programming environment.
 
 ## 3.) Change copyright
 Your Tic-tac-toe webapp consists of a frontend and backend part.  
 As frontend, we use a tool called `Swagger`, so we can try out APIs with a graphical interface.
-Swagger is already open, as you open Github's programming environment.
+Swagger is already open, as you open Githubs programming environment.
 - [ ] To open Swagger click on "PORTS" you will find it in the terminal next to the text "Terminal".
 - [ ] Now you can see an open port called "Laravel (80)" next to the portname there is a link. Hover over it and click the browser icon.
 The page that opens up now is your web interface. Keep it open you will need it!
 As backend, we use a [PHP-App](https://www.php.net/manual/en/), based on the framework [Laravel](https://laravel.com/docs/9.x).  
 
-We have prepared a function that displays this games' copyright. ©️
+We have prepared a function that displays this game's copyright. ©️
 
 **Try this API method to display the game's copyright:**
 - [ ] In Swagger, click on `/copyright`.
