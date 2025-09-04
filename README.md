@@ -151,7 +151,7 @@ Now it's your task, to do this.
 - [ ] 🔁 Click on `Sync changes` to upload your changes to GitHub.
 
 ## Close Codespace & Some Tips
-- Close the Codespace when you don't simply by going back to the place you started it but instead of the big button you press on the three dots on the right side of the text "Active" and then click "Delte". MAKE SURE YOU COMMITED YOUR CHANGES BEFOREHAND.
+- Close the Codespace when you don't need it anymore. Simply by going back to the place you started it but instead of the big button you press on the three dots on the right side of the text "Active" and then click "Delete". MAKE SURE YOU COMMITED YOUR CHANGES BEFOREHAND.
 - If you ever close the the Codespace tab by accident simply open it in the same three dot menu and click on "Open in Browser"
 
 
