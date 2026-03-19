@@ -1,6 +1,8 @@
 # Apprenticeship Challenge for Fachinformatiker*in Anwendungsentwicklung
 You need to successfully solve this challenge, if you want to snatch yourself an apprenticeship at [MÜNSMEDIA GmbH](https://muensmedia.de) as a Fachinformatiker*in Anwendungsentwicklung. 👾 🤖 😎
 
+At MÜNSMEDIA, we use AI for various purposes. However, here we are interested in _your_ personal skill level, not that of your AI. Please do not use generative AI to assist you in solving this challenge. The use of AI will immediately lead to a disqualification - _trust us, we will notice if you try to cheat!_
+
 ## Tic-tac-toe
 [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe), noughts and crosses, or Xs and Os is a two-player game, that you're probably already familiar with.
 
